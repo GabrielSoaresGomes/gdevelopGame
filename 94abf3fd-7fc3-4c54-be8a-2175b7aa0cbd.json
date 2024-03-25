@@ -190,28 +190,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Thumb.png4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Square Green Slider Thumb.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/7f9d3fcd723e6cd77452d818e3cba9775f63acdbf98378e7276cc95bf1213e86_Square Green Slider Thumb.png",
-          "name": "Square Green Slider Thumb.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Thumb.png5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Square Green Slider Thumb.png2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Square Green Slider Thumb.png6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
@@ -231,19 +209,6 @@
         "origin": {
           "identifier": "https://project-resources.gdevelop.io/94abf3fd-7fc3-4c54-be8a-2175b7aa0cbd/resources/96e41ad2c590d667909b99da9f92f1e41ee164edf5b32e884acb6398c4f82b0c-Erimont - Caves (Roguelike) Main Theme OST.mp3",
           "name": "cloud-project-resource"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square Green Toggle_Off2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square Green Toggle_Off.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Toggle Switch/pixel art/d05bf00d39eb358ed6633f8fdb2b3b9180629639a659cd3b97ced4fe4cd584a2_Square Green Toggle_Off.png",
-          "name": "Square Green Toggle_Off.png"
         }
       },
       {
@@ -279,68 +244,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Shaded Blue Fill Bar2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shaded Blue Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/efb17aade7ab227ae611ea6c681413bedfaecd4b661b793675b1dd59ca941d2e_Shaded Blue Fill Bar.png",
-          "name": "Shaded Blue Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Wood Bar Border2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Wood Bar Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/5c3135f6fa8587da82ddea950881fc8b35d422bb806d9331f8b47fdc715ee76a_Wood Bar Border.png",
-          "name": "Wood Bar Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Brazil4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Brazil",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Brazil5.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Brazil2",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Brazil6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Brazil3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Languages4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
@@ -363,60 +266,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Languages3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite6.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite7.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite8.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite9.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite4",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite10.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "NewTiledSprite5",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
         "smoothed": false,
         "userAdded": true
       },
@@ -1690,67 +1539,6 @@
               "width": 192
             }
           }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite2",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 0
-                          },
-                          {
-                            "x": 58,
-                            "y": 0
-                          },
-                          {
-                            "x": 58,
-                            "y": 64
-                          },
-                          {
-                            "x": 6,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "objectsFolderStructure": {
@@ -1770,9 +1558,6 @@
           },
           {
             "objectName": "GameTitle"
-          },
-          {
-            "objectName": "NewSprite"
           }
         ]
       },
