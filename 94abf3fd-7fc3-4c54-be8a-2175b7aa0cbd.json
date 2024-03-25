@@ -105,7 +105,7 @@
     "resources": [
       {
         "alwaysLoaded": false,
-        "file": "assets/Transparent Button With White Blue Border_Hovered.png.png",
+        "file": "assets/Transparent Button With White Blue Border_Hovered.png3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Transparent Button With White Blue Border_Hovered.png",
@@ -118,7 +118,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Transparent Button With White Blue Border_Idle.png.png",
+        "file": "assets/Transparent Button With White Blue Border_Idle.png2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Transparent Button With White Blue Border_Idle.png",
@@ -131,7 +131,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Transparent Button With White Blue Border_Pressed.png.png",
+        "file": "assets/Transparent Button With White Blue Border_Pressed.png3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Transparent Button With White Blue Border_Pressed.png",
@@ -143,7 +143,7 @@
         }
       },
       {
-        "file": "assets/Kenney Mini Square.ttf",
+        "file": "assets/Kenney Mini Square2.ttf",
         "kind": "font",
         "metadata": "",
         "name": "Kenney Mini Square.ttf",
@@ -155,7 +155,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Transparent Button With White Blue Border_Pressed.png2.png",
+        "file": "assets/Transparent Button With White Blue Border_Pressed.png4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Transparent Button With White Blue Border_Pressed.png2",
@@ -164,7 +164,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Border.png.png",
+        "file": "assets/Square Green Slider Border.png2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square Green Slider Border.png",
@@ -177,7 +177,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Fill Bar.png.png",
+        "file": "assets/Square Green Slider Fill Bar.png2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square Green Slider Fill Bar.png",
@@ -190,7 +190,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Thumb.png.png",
+        "file": "assets/Square Green Slider Thumb.png4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square Green Slider Thumb.png",
@@ -203,7 +203,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Thumb.png2.png",
+        "file": "assets/Square Green Slider Thumb.png5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square Green Slider Thumb.png2",
@@ -212,7 +212,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Slider Thumb.png3.png",
+        "file": "assets/Square Green Slider Thumb.png6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Square Green Slider Thumb.png3",
@@ -220,7 +220,7 @@
         "userAdded": true
       },
       {
-        "file": "assets/Erimont - Caves (Roguelike) Main Theme OST.mp3",
+        "file": "assets/Erimont - Caves (Roguelike) Main Theme OST2.mp3",
         "kind": "audio",
         "metadata": "",
         "name": "Erimont - Caves (Roguelike) Main Theme OST.mp3",
@@ -235,7 +235,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Toggle_Off.png",
+        "file": "assets/Square Green Toggle_Off2.png",
         "kind": "image",
         "metadata": "",
         "name": "Square Green Toggle_Off.png",
@@ -248,7 +248,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square Green Toggle_On.png.png",
+        "file": "assets/Square Green Toggle_On.png2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Square Green Toggle_On.png",
@@ -261,7 +261,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Unchecked.png",
+        "file": "assets/Unchecked2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Unchecked",
@@ -270,7 +270,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Transparent Button With White Blue Border_Hovered.png2.png",
+        "file": "assets/Transparent Button With White Blue Border_Hovered.png4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "Transparent Button With White Blue Border_Hovered.png2",
@@ -279,7 +279,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Shaded Blue Fill Bar.png",
+        "file": "assets/Shaded Blue Fill Bar2.png",
         "kind": "image",
         "metadata": "",
         "name": "Shaded Blue Fill Bar.png",
@@ -292,7 +292,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Wood Bar Border.png",
+        "file": "assets/Wood Bar Border2.png",
         "kind": "image",
         "metadata": "",
         "name": "Wood Bar Border.png",
@@ -305,7 +305,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Brazil.png",
+        "file": "assets/Brazil4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Brazil",
@@ -314,7 +314,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite.png",
+        "file": "assets/NewSprite3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite",
@@ -323,7 +323,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Brazil2.png",
+        "file": "assets/Brazil5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Brazil2",
@@ -332,7 +332,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Brazil3.png",
+        "file": "assets/Brazil6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Brazil3",
@@ -341,7 +341,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Languages.png",
+        "file": "assets/Languages4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Languages",
@@ -350,7 +350,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Languages2.png",
+        "file": "assets/Languages5.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Languages2",
@@ -359,7 +359,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Languages3.png",
+        "file": "assets/Languages6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "Languages3",
@@ -368,7 +368,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite.png",
+        "file": "assets/NewTiledSprite6.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "NewTiledSprite",
@@ -377,7 +377,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite2.png",
+        "file": "assets/NewTiledSprite7.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "NewTiledSprite2",
@@ -386,7 +386,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite3.png",
+        "file": "assets/NewTiledSprite8.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "NewTiledSprite3",
@@ -395,7 +395,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite4.png",
+        "file": "assets/NewTiledSprite9.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "NewTiledSprite4",
@@ -404,7 +404,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewTiledSprite5.png",
+        "file": "assets/NewTiledSprite10.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "NewTiledSprite5",
@@ -413,7 +413,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite2.png",
+        "file": "assets/NewSprite4.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
         "name": "NewSprite2",
@@ -422,7 +422,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/2948b735772413c7f19d8ffbbca435a38bd99f044a71d23542f4e73d91cbba47_tiled_blue space.png.png",
+        "file": "assets/2948b735772413c7f19d8ffbbca435a38bd99f044a71d23542f4e73d91cbba47_tiled_blue space.png2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "2948b735772413c7f19d8ffbbca435a38bd99f044a71d23542f4e73d91cbba47_tiled_blue space.png",
@@ -431,7 +431,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Down_1.png",
+        "file": "assets/Scout 3_Down_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Down_1.png",
@@ -444,7 +444,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Down_2.png",
+        "file": "assets/Scout 3_Down_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Down_2.png",
@@ -457,7 +457,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Down_3.png",
+        "file": "assets/Scout 3_Down_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Down_3.png",
@@ -470,7 +470,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Left_1.png",
+        "file": "assets/Scout 3_Left_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Left_1.png",
@@ -483,7 +483,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Left_2.png",
+        "file": "assets/Scout 3_Left_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Left_2.png",
@@ -496,7 +496,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Left_3.png",
+        "file": "assets/Scout 3_Left_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Left_3.png",
@@ -509,7 +509,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Right_1.png",
+        "file": "assets/Scout 3_Right_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Right_1.png",
@@ -522,7 +522,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Right_2.png",
+        "file": "assets/Scout 3_Right_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Right_2.png",
@@ -535,7 +535,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Right_3.png",
+        "file": "assets/Scout 3_Right_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Right_3.png",
@@ -548,7 +548,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Up_1.png",
+        "file": "assets/Scout 3_Up_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Up_1.png",
@@ -561,7 +561,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Up_2.png",
+        "file": "assets/Scout 3_Up_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Up_2.png",
@@ -574,7 +574,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Scout 3_Up_3.png",
+        "file": "assets/Scout 3_Up_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Scout 3_Up_3.png",
@@ -587,7 +587,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Down_1.png",
+        "file": "assets/Conjurer 3_Down_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Down_1.png",
@@ -600,7 +600,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Down_2.png",
+        "file": "assets/Conjurer 3_Down_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Down_2.png",
@@ -613,7 +613,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Down_3.png",
+        "file": "assets/Conjurer 3_Down_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Down_3.png",
@@ -626,7 +626,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Left_1.png",
+        "file": "assets/Conjurer 3_Left_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Left_1.png",
@@ -639,7 +639,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Left_2.png",
+        "file": "assets/Conjurer 3_Left_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Left_2.png",
@@ -652,7 +652,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Left_3.png",
+        "file": "assets/Conjurer 3_Left_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Left_3.png",
@@ -665,7 +665,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Right_1.png",
+        "file": "assets/Conjurer 3_Right_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Right_1.png",
@@ -678,7 +678,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Right_2.png",
+        "file": "assets/Conjurer 3_Right_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Right_2.png",
@@ -691,7 +691,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Right_3.png",
+        "file": "assets/Conjurer 3_Right_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Right_3.png",
@@ -704,7 +704,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Up_1.png",
+        "file": "assets/Conjurer 3_Up_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Up_1.png",
@@ -717,7 +717,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Up_2.png",
+        "file": "assets/Conjurer 3_Up_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Up_2.png",
@@ -730,7 +730,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Conjurer 3_Up_3.png",
+        "file": "assets/Conjurer 3_Up_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Conjurer 3_Up_3.png",
@@ -743,7 +743,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Down_1.png",
+        "file": "assets/Bard 2_Down_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Down_1.png",
@@ -756,7 +756,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Down_2.png",
+        "file": "assets/Bard 2_Down_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Down_2.png",
@@ -769,7 +769,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Down_3.png",
+        "file": "assets/Bard 2_Down_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Down_3.png",
@@ -782,7 +782,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Left_1.png",
+        "file": "assets/Bard 2_Left_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Left_1.png",
@@ -795,7 +795,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Left_2.png",
+        "file": "assets/Bard 2_Left_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Left_2.png",
@@ -808,7 +808,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Left_3.png",
+        "file": "assets/Bard 2_Left_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Left_3.png",
@@ -821,7 +821,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Right_1.png",
+        "file": "assets/Bard 2_Right_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Right_1.png",
@@ -834,7 +834,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Right_2.png",
+        "file": "assets/Bard 2_Right_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Right_2.png",
@@ -847,7 +847,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Right_3.png",
+        "file": "assets/Bard 2_Right_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Right_3.png",
@@ -860,7 +860,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Up_1.png",
+        "file": "assets/Bard 2_Up_4.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Up_1.png",
@@ -873,7 +873,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Up_2.png",
+        "file": "assets/Bard 2_Up_5.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Up_2.png",
@@ -886,7 +886,7 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Bard 2_Up_3.png",
+        "file": "assets/Bard 2_Up_6.png",
         "kind": "image",
         "metadata": "",
         "name": "Bard 2_Up_3.png",
