@@ -574,6 +574,42 @@
         "name": "Phases/Sprites/Player/UP/Up_3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/TiledSprites/TiledCarpet.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Phases/TiledSprites/TiledCarpet",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/TiledSprites/TiledWoodGround.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Phases/TiledSprites/TiledWoodGround",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/WoodCornerWall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Phases/Sprites/WoodCornerWall",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/TiledSprites/TiledWoodWall.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Phases/TiledSprites/TiledWoodWall",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3783,7 +3819,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.5653158055126704,
+        "zoomFactor": 0.43357743047026925,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5654,7 +5690,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Carpet",
-          "texture": "NewTiledSprite10",
+          "texture": "Phases/TiledSprites/TiledCarpet",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -6678,7 +6714,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.22,
         "snap": true,
-        "zoomFactor": 0.9538618542089542,
+        "zoomFactor": 0.7077142870146685,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6701,7 +6737,7 @@
           "initialVariables": []
         },
         {
-          "angle": 90,
+          "angle": 270,
           "customSize": true,
           "depth": 1,
           "height": 448,
@@ -6717,7 +6753,7 @@
           "initialVariables": []
         },
         {
-          "angle": 180,
+          "angle": 0,
           "customSize": true,
           "depth": 1,
           "height": 416,
@@ -6733,7 +6769,7 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 180,
           "customSize": true,
           "depth": 1,
           "height": 416,
@@ -6749,7 +6785,7 @@
           "initialVariables": []
         },
         {
-          "angle": 270,
+          "angle": 90,
           "customSize": true,
           "depth": 1,
           "height": 448,
@@ -6760,22 +6796,6 @@
           "x": 1008,
           "y": 560,
           "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "9efeac94-be36-4f3a-b2a6-d49e63d3bebd",
-          "width": 32,
-          "x": 1248,
-          "y": 320,
-          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6827,6 +6847,36 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "0f2a8b37-dcc9-4de0-9f69-e218bdfb1b86",
+          "width": 0,
+          "x": 768,
+          "y": 320,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "4a92f2ac-5e0b-4c0d-ba7c-214f828eb9a6",
+          "width": 0,
+          "x": 1248,
+          "y": 320,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6834,7 +6884,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "WoodGround",
-          "texture": "NewTiledSprite12",
+          "texture": "Phases/TiledSprites/TiledWoodGround",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -6845,7 +6895,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "WoodWall",
-          "texture": "NewTiledSprite15",
+          "texture": "Phases/TiledSprites/TiledWoodWall",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -6873,7 +6923,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite25",
+                      "image": "Phases/Sprites/WoodCornerWall",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6903,67 +6953,6 @@
                           {
                             "x": 0,
                             "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "WoodWallCustom",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite24",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 0
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 0,
-                            "y": 64
                           }
                         ]
                       ]
@@ -6983,9 +6972,6 @@
           },
           {
             "objectName": "WoodWall"
-          },
-          {
-            "objectName": "WoodWallCustom"
           },
           {
             "objectName": "WoodenWallCorner"
