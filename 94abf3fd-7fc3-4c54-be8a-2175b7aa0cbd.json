@@ -382,7 +382,7 @@
         "file": "assets/Phases/TiledSprites/TiledRockGround.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/TiledSprites/TiledRockGround",
+        "name": "assets/Phases/TiledSprites/TiledRockGround.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -391,7 +391,7 @@
         "file": "assets/Phases/TiledSprites/TiledRockWall.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/TiledSprites/TiledRockWall",
+        "name": "assets/Phases/TiledSprites/TiledRockWall.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -400,7 +400,7 @@
         "file": "assets/Phases/Sprites/SpikeSprite.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "Phases/Sprites/SpikeSprite",
+        "name": "assets/Phases/Sprites/SpikeSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -409,7 +409,7 @@
         "file": "assets/Phases/Sprites/BloodSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/BloodSprite",
+        "name": "assets/Phases/Sprites/BloodSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -418,7 +418,7 @@
         "file": "assets/Phases/Sprites/ChestSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/ChestSprite",
+        "name": "assets/Phases/Sprites/ChestSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -427,7 +427,7 @@
         "file": "assets/Phases/Sprites/DoorSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/DoorSprite",
+        "name": "assets/Phases/Sprites/DoorSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -436,7 +436,7 @@
         "file": "assets/Phases/Sprites/BarrelSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/BarrelSprite",
+        "name": "assets/Phases/Sprites/BarrelSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -445,7 +445,7 @@
         "file": "assets/Phases/Sprites/CobwebSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/CobwebSprite",
+        "name": "assets/Phases/Sprites/CobwebSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -454,7 +454,7 @@
         "file": "assets/Phases/Sprites/StairsSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Phases\\Sprites\\StairsSprite.png",
+        "name": "assets/Phases/Sprites/StairsSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -463,7 +463,7 @@
         "file": "assets/Phases/Sprites/BossDoorSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/BossDoorSprite",
+        "name": "assets/Phases/Sprites/BossDoorSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -472,7 +472,7 @@
         "file": "assets/Phases/Sprites/Player/DOWN/Down_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/DOWN/Down_1",
+        "name": "assets/Phases/Sprites/Player/DOWN/Down_1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -481,7 +481,7 @@
         "file": "assets/Phases/Sprites/Player/DOWN/Down_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/DOWN/Down_2",
+        "name": "assets/Phases/Sprites/Player/DOWN/Down_2.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -490,7 +490,7 @@
         "file": "assets/Phases/Sprites/Player/DOWN/Down_3.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/DOWN/Down_3",
+        "name": "assets/Phases/Sprites/Player/DOWN/Down_3.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -499,7 +499,7 @@
         "file": "assets/Phases/Sprites/Player/LEFT/Left_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/LEFT/Left_1",
+        "name": "assets/Phases/Sprites/Player/LEFT/Left_1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -508,7 +508,7 @@
         "file": "assets/Phases/Sprites/Player/LEFT/Left_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/LEFT/Left_2",
+        "name": "assets/Phases/Sprites/Player/LEFT/Left_2.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -517,7 +517,7 @@
         "file": "assets/Phases/Sprites/Player/LEFT/Left_3.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/LEFT/Left_3",
+        "name": "assets/Phases/Sprites/Player/LEFT/Left_3.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -526,7 +526,7 @@
         "file": "assets/Phases/Sprites/Player/RIGHT/Right_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/RIGHT/Right_1",
+        "name": "assets/Phases/Sprites/Player/RIGHT/Right_1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -535,7 +535,7 @@
         "file": "assets/Phases/Sprites/Player/RIGHT/Right_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/RIGHT/Right_2",
+        "name": "assets/Phases/Sprites/Player/RIGHT/Right_2.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -544,7 +544,7 @@
         "file": "assets/Phases/Sprites/Player/RIGHT/Right_3.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/RIGHT/Right_3",
+        "name": "assets/Phases/Sprites/Player/RIGHT/Right_3.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -553,7 +553,7 @@
         "file": "assets/Phases/Sprites/Player/UP/Up_1.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/UP/Up_1",
+        "name": "assets/Phases/Sprites/Player/UP/Up_1.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -562,7 +562,7 @@
         "file": "assets/Phases/Sprites/Player/UP/Up_2.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/UP/Up_2",
+        "name": "assets/Phases/Sprites/Player/UP/Up_2.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -571,7 +571,7 @@
         "file": "assets/Phases/Sprites/Player/UP/Up_3.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/Player/UP/Up_3",
+        "name": "assets/Phases/Sprites/Player/UP/Up_3.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -580,7 +580,7 @@
         "file": "assets/Phases/TiledSprites/TiledCarpet.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/TiledSprites/TiledCarpet",
+        "name": "assets/Phases/TiledSprites/TiledCarpet.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -589,7 +589,7 @@
         "file": "assets/Phases/TiledSprites/TiledWoodGround.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/TiledSprites/TiledWoodGround",
+        "name": "assets/Phases/TiledSprites/TiledWoodGround.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -607,7 +607,7 @@
         "file": "assets/Phases/TiledSprites/TiledWoodWall.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
-        "name": "Phases/TiledSprites/TiledWoodWall",
+        "name": "assets/Phases/TiledSprites/TiledWoodWall.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -945,7 +945,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.13,
         "snap": true,
-        "zoomFactor": 0.3216911764705891,
+        "zoomFactor": 0.5653158055126319,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2892,7 +2892,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.3411856023473451,
+        "zoomFactor": 0.6406912462476481,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3819,7 +3819,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.37971210019482116,
+        "zoomFactor": 0.6244537826600451,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5223,6 +5223,21 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "585fc77f-dadc-47f7-9ac6-ee7de3f41eab",
+          "width": 0,
+          "x": 736,
+          "y": 704,
+          "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -5230,7 +5245,7 @@
           "assetStoreId": "",
           "height": 64,
           "name": "RockGround",
-          "texture": "Phases/TiledSprites/TiledRockGround",
+          "texture": "assets/Phases/TiledSprites/TiledRockGround.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
           "variables": [],
@@ -5258,7 +5273,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/BloodSprite",
+                      "image": "assets/Phases/Sprites/BloodSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5302,7 +5317,7 @@
           "assetStoreId": "",
           "height": 64,
           "name": "RockWall",
-          "texture": "Phases/TiledSprites/TiledRockWall",
+          "texture": "assets/Phases/TiledSprites/TiledRockWall.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
           "variables": [],
@@ -5330,7 +5345,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/DoorSprite",
+                      "image": "assets/Phases/Sprites/DoorSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5402,7 +5417,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/BarrelSprite",
+                      "image": "assets/Phases/Sprites/BarrelSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5463,7 +5478,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/CobwebSprite",
+                      "image": "assets/Phases/Sprites/CobwebSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5524,7 +5539,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\StairsSprite.png",
+                      "image": "assets/Phases/Sprites/StairsSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5585,7 +5600,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/ChestSprite",
+                      "image": "assets/Phases/Sprites/ChestSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5646,7 +5661,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/SpikeSprite",
+                      "image": "assets/Phases/Sprites/SpikeSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5690,7 +5705,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "Carpet",
-          "texture": "Phases/TiledSprites/TiledCarpet",
+          "texture": "assets/Phases/TiledSprites/TiledCarpet.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -5718,7 +5733,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/BossDoorSprite",
+                      "image": "assets/Phases/Sprites/BossDoorSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5847,7 +5862,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/DOWN/Down_1",
+                      "image": "assets/Phases/Sprites/Player/DOWN/Down_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5883,7 +5898,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/DOWN/Down_2",
+                      "image": "assets/Phases/Sprites/Player/DOWN/Down_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5919,7 +5934,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/DOWN/Down_3",
+                      "image": "assets/Phases/Sprites/Player/DOWN/Down_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5968,7 +5983,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/LEFT/Left_1",
+                      "image": "assets/Phases/Sprites/Player/LEFT/Left_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6004,7 +6019,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/LEFT/Left_2",
+                      "image": "assets/Phases/Sprites/Player/LEFT/Left_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6040,7 +6055,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/LEFT/Left_3",
+                      "image": "assets/Phases/Sprites/Player/LEFT/Left_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6089,7 +6104,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/RIGHT/Right_1",
+                      "image": "assets/Phases/Sprites/Player/RIGHT/Right_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6125,7 +6140,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/RIGHT/Right_2",
+                      "image": "assets/Phases/Sprites/Player/RIGHT/Right_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6161,7 +6176,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/RIGHT/Right_3",
+                      "image": "assets/Phases/Sprites/Player/RIGHT/Right_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6210,7 +6225,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/UP/Up_1",
+                      "image": "assets/Phases/Sprites/Player/UP/Up_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6246,7 +6261,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/UP/Up_2",
+                      "image": "assets/Phases/Sprites/Player/UP/Up_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6282,7 +6297,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/Player/UP/Up_3",
+                      "image": "assets/Phases/Sprites/Player/UP/Up_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6312,6 +6327,66 @@
                           {
                             "x": 2,
                             "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets/Phases/Sprites/CobwebSprite.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 2
+                          },
+                          {
+                            "x": 59,
+                            "y": 2
+                          },
+                          {
+                            "x": 59,
+                            "y": 56
+                          },
+                          {
+                            "x": 3,
+                            "y": 56
                           }
                         ]
                       ]
@@ -6364,6 +6439,9 @@
           },
           {
             "objectName": "Boneco"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
@@ -6714,7 +6792,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.22,
         "snap": true,
-        "zoomFactor": 0.6622955665506415,
+        "zoomFactor": 1.2031142879249375,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6877,6 +6955,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "c1862e8a-177d-4f23-b1d7-a29a50b35170",
+          "width": 108,
+          "x": 800,
+          "y": 384,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -6884,7 +6978,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "WoodGround",
-          "texture": "Phases/TiledSprites/TiledWoodGround",
+          "texture": "assets/Phases/TiledSprites/TiledWoodGround.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -6895,7 +6989,7 @@
           "assetStoreId": "",
           "height": 32,
           "name": "WoodWall",
-          "texture": "Phases/TiledSprites/TiledWoodWall",
+          "texture": "assets/Phases/TiledSprites/TiledWoodWall.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
