@@ -454,7 +454,7 @@
         "file": "assets/Phases/Sprites/StairsSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/StairsSprite",
+        "name": "assets\\Phases\\Sprites\\StairsSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -598,7 +598,7 @@
         "file": "assets/Phases/Sprites/WoodCornerWall.png",
         "kind": "image",
         "metadata": "",
-        "name": "Phases/Sprites/WoodCornerWall",
+        "name": "assets/Phases/Sprites/WoodCornerWall.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -3819,7 +3819,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.43357743047026925,
+        "zoomFactor": 0.37971210019482116,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5524,7 +5524,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/StairsSprite",
+                      "image": "assets\\Phases\\Sprites\\StairsSprite.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6714,7 +6714,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.22,
         "snap": true,
-        "zoomFactor": 0.7077142870146685,
+        "zoomFactor": 0.6622955665506415,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6923,7 +6923,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Phases/Sprites/WoodCornerWall",
+                      "image": "assets/Phases/Sprites/WoodCornerWall.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6962,6 +6962,66 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\StairsSprite.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 104
+                          },
+                          {
+                            "x": 263,
+                            "y": 104
+                          },
+                          {
+                            "x": 263,
+                            "y": 311
+                          },
+                          {
+                            "x": 0,
+                            "y": 311
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -6975,6 +7035,9 @@
           },
           {
             "objectName": "WoodenWallCorner"
+          },
+          {
+            "objectName": "NewSprite"
           }
         ]
       },
