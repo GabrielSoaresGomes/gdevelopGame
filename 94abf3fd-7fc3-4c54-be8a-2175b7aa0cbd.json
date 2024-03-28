@@ -5835,6 +5835,7 @@
               "IsCalledManually": false
             },
             {
+              "ignoreDefaultControls": false,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
@@ -5843,7 +5844,6 @@
               "angularMaxSpeed": 180,
               "customIsometryAngle": 30,
               "deceleration": 100000,
-              "ignoreDefaultControls": false,
               "maxSpeed": 200,
               "movementAngleOffset": 0,
               "rotateObject": false,
@@ -6094,127 +6094,6 @@
               ]
             },
             {
-              "name": "Right",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1667,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 0
-                          },
-                          {
-                            "x": 14,
-                            "y": 0
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 0
-                          },
-                          {
-                            "x": 14,
-                            "y": 0
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 0
-                          },
-                          {
-                            "x": 14,
-                            "y": 0
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
               "name": "Up",
               "useMultipleDirections": false,
               "directions": [
@@ -6298,6 +6177,127 @@
                     {
                       "hasCustomCollisionMask": true,
                       "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 16
+                          },
+                          {
+                            "x": 2,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Right",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.1667,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 16
+                          },
+                          {
+                            "x": 2,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 2,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 0
+                          },
+                          {
+                            "x": 14,
+                            "y": 16
+                          },
+                          {
+                            "x": 2,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6449,11 +6449,6 @@
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
           "actions": [
             {
               "type": {
@@ -6482,11 +6477,193 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
               },
               "parameters": [
                 "Boneco",
-                "Left"
+                "Animation",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "Boneco",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "Boneco",
+                "Animation"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Adicionando WASD como botões de movimento"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "w"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateUpKey"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateLeftKey"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "s"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateDownKey"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::SimulateRightKey"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimento Esquerda"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::XVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "<",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "=",
+                "0"
               ]
             }
           ],
@@ -6514,15 +6691,40 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimento Cima"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "TopDownMovementBehavior::XVelocity"
               },
               "parameters": [
                 "Boneco",
-                "Right"
+                "TopDownMovement",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "<",
+                "0"
               ]
             }
           ],
@@ -6550,15 +6752,40 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimento Direita"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "TopDownMovementBehavior::XVelocity"
               },
               "parameters": [
                 "Boneco",
-                "Up"
+                "TopDownMovement",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "=",
+                "0"
               ]
             }
           ],
@@ -6586,15 +6813,40 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimento Baixo"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "TopDownMovementBehavior::XVelocity"
               },
               "parameters": [
                 "Boneco",
-                "Down"
+                "TopDownMovement",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                ">",
+                "0"
               ]
             }
           ],
@@ -6622,15 +6874,40 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Sem movimento"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "AnyKeyPressed"
+                "value": "TopDownMovementBehavior::XVelocity"
               },
               "parameters": [
-                ""
+                "Boneco",
+                "TopDownMovement",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "=",
+                "0"
               ]
             }
           ],
@@ -6648,11 +6925,143 @@
             },
             {
               "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "Boneco",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
               },
               "parameters": [
                 "Boneco",
                 "Animation"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimento Diagonal Baixo"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::XVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "Boneco",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Boneco",
+                "Animation",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Movimento Diagonal Cima"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::YVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "<",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::XVelocity"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "Boneco",
+                "Animation"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+              },
+              "parameters": [
+                "Boneco",
+                "Animation",
+                "=",
+                "2"
               ]
             }
           ]
