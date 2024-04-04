@@ -568,6 +568,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Player/Hearth.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Phases\\Sprites\\Player\\Hearth.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/Phases/TiledSprites/TiledCarpet.png",
         "kind": "image",
         "metadata": "",
@@ -626,33 +635,6 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Phases/Sprites/doors/DoorSprite3.png\"}",
         "name": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Door.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Door",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Door2.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Door2",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Door3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Door3",
         "smoothed": false,
         "userAdded": false
       }
@@ -3864,7 +3846,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.8700232859857945,
+        "zoomFactor": 1.2121641972174628,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4409,9 +4391,9 @@
           "layer": "",
           "name": "RockWall",
           "persistentUuid": "23426b40-3796-4915-accd-f7e022f35396",
-          "width": 512,
-          "x": 1808,
-          "y": -176,
+          "width": 544,
+          "x": 1792,
+          "y": -160,
           "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
@@ -5255,22 +5237,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 4,
-          "height": 46,
-          "layer": "",
-          "name": "Boneco",
-          "persistentUuid": "b665fcb5-715f-4942-846c-aa78b024d1dd",
-          "width": 46,
-          "x": 2098,
-          "y": 0,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -5280,6 +5246,22 @@
           "x": 704,
           "y": 704,
           "zOrder": 19,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 4,
+          "height": 46,
+          "layer": "",
+          "name": "Boneco",
+          "persistentUuid": "61f22136-2450-48b1-ae0c-1cdfa1ccbb9b",
+          "width": 46,
+          "x": 3058,
+          "y": -430,
+          "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5925,9 +5907,82 @@
           "name": "Boneco",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "dash_in_delay",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "life",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
+              "name": "max_life",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "folded": true,
+              "name": "current_life_ui",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "invulnerability",
+              "type": "boolean",
+              "value": false
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Glow",
+              "name": "dash_light",
+              "doubleParameters": {
+                "distance": 5,
+                "innerStrength": 1,
+                "outerStrength": 1
+              },
+              "stringParameters": {
+                "color": "255;255;255"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 3,
+              "CurrentHealth": 0,
+              "MaxHealth": 3,
+              "DamageCooldown": 0,
+              "AllowOverHealing": false,
+              "IsHealthJustDamaged": false,
+              "DamageToBeApplied": 0,
+              "HitAtLeastOnce": false,
+              "ChanceToDodge": 0,
+              "IsJustDodged": false,
+              "HealToBeApplied": 0,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 2.0247e-320,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ShieldDamageTaken": 2.0247e-320,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0
+            },
             {
               "name": "RemapForTopdown",
               "type": "BehaviorRemapper::RemapForTopdown",
@@ -5990,10 +6045,10 @@
               "IsCalledManually": false
             },
             {
-              "acceleration": 900,
-              "maxSpeed": 400,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+              "acceleration": 900,
+              "maxSpeed": 400,
               "ignoreDefaultControls": false,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -6495,7 +6550,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "NewSprite",
+          "name": "Hearth",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -6503,16 +6558,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Hearth",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\CobwebSprite.png",
+                      "image": "assets\\Phases\\Sprites\\Player\\Hearth.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6528,20 +6584,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 3,
-                            "y": 2
+                            "x": 7,
+                            "y": 9
                           },
                           {
-                            "x": 59,
-                            "y": 2
+                            "x": 57,
+                            "y": 9
                           },
                           {
-                            "x": 59,
-                            "y": 56
+                            "x": 57,
+                            "y": 51
                           },
                           {
-                            "x": 3,
-                            "y": 56
+                            "x": 7,
+                            "y": 51
                           }
                         ]
                       ]
@@ -6593,7 +6649,7 @@
             "objectName": "Boneco"
           },
           {
-            "objectName": "NewSprite"
+            "objectName": "Hearth"
           }
         ]
       },
@@ -6675,6 +6731,40 @@
                 "Door",
                 "Animation"
               ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Boneco",
+                "Effect",
+                "\"dash_light\"",
+                "no"
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetMaxHealthOp"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                "=",
+                "Boneco.max_life",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetHealth"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                "Boneco.life",
+                "Boneco.max_life"
+              ]
             }
           ],
           "events": [
@@ -6738,6 +6828,53 @@
                   },
                   "parameters": [
                     "Door",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.life",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Hearth",
+                    "Boneco.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "current_life_ui",
                     "=",
                     "0"
                   ]
@@ -7481,7 +7618,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Corrida"
+          "comment": "Boneco Corrida"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -7563,6 +7700,274 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Boneco Dash "
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Space"
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "dash_in_delay",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "+",
+                "1000"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::Acceleration"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "*",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.15"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "dash_in_delay",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "=",
+                "200"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Boneco",
+                "Effect",
+                "\"dash_light\"",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.09"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "dash_in_delay",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Boneco",
+                "Effect",
+                "\"dash_light\"",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "Spike",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "invulnerability",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "life",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Hearth",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "invulnerability",
+                "True"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.life",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Hearth",
+                    "Boneco.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "current_life_ui",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "invulnerability",
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
@@ -7642,6 +8047,39 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
@@ -7656,6 +8094,10 @@
         {
           "name": "Flippable",
           "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health"
         },
         {
           "name": "Opacity",
