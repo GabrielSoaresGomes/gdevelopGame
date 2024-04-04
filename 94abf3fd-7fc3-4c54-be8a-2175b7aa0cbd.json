@@ -424,15 +424,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Phases/Sprites/doors/DoorSprite.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\Phases\\Sprites\\doors\\DoorSprite.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/Phases/Sprites/BarrelSprite.png",
         "kind": "image",
         "metadata": "",
@@ -613,6 +604,15 @@
       },
       {
         "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/doors/DoorSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Phases/Sprites/doors/DoorSprite.png\"}",
+        "name": "assets\\Phases\\Sprites\\doors\\DoorSprite.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
         "file": "assets/Phases/Sprites/doors/DoorSprite2.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Phases/Sprites/doors/DoorSprite2.png\"}",
@@ -624,46 +624,37 @@
         "alwaysLoaded": false,
         "file": "assets/Phases/Sprites/doors/DoorSprite3.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Phases/Sprites/doors/DoorSprite3.png\"}",
         "name": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
         "smoothed": false,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite.png",
+        "file": "assets/Door.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite",
+        "name": "Door",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Door2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Door2",
         "smoothed": false,
         "userAdded": false
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/NewSprite2.png",
+        "file": "assets/Door3.png",
         "kind": "image",
         "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite2",
+        "name": "Door3",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite3.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite3",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/NewSprite4.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "NewSprite4",
-        "smoothed": false,
-        "userAdded": true
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3873,7 +3864,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.5117784035210561,
+        "zoomFactor": 0.8700232859857945,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3960,7 +3951,7 @@
           "initialVariables": []
         },
         {
-          "angle": 90,
+          "angle": 270,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -4506,14 +4497,14 @@
           "initialVariables": []
         },
         {
-          "angle": 270,
+          "angle": 90,
           "customSize": false,
           "height": 0,
           "layer": "",
           "name": "Door",
           "persistentUuid": "49eda439-208f-4e0b-a584-451cccdee222",
           "width": 0,
-          "x": 1789,
+          "x": 1785,
           "y": 480,
           "zOrder": 4,
           "numberProperties": [],
@@ -4825,7 +4816,7 @@
           "initialVariables": []
         },
         {
-          "angle": 180,
+          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -5271,8 +5262,8 @@
           "name": "Boneco",
           "persistentUuid": "b665fcb5-715f-4942-846c-aa78b024d1dd",
           "width": 46,
-          "x": 626,
-          "y": 530,
+          "x": 2098,
+          "y": 0,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -5379,12 +5370,19 @@
           "behaviors": []
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Door",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "is_open",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [],
           "animations": [
@@ -5393,24 +5391,35 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite2",
-                      "points": [],
+                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite.png",
+                      "points": [
+                        {
+                          "name": "TOP",
+                          "x": 31.5,
+                          "y": 23.5
+                        },
+                        {
+                          "name": "DOWN",
+                          "x": 31,
+                          "y": 36.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.5,
+                        "y": 29.5
                       },
                       "customCollisionMask": [
                         [
@@ -5435,18 +5444,29 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite3",
-                      "points": [],
+                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite2.png",
+                      "points": [
+                        {
+                          "name": "TOP",
+                          "x": 31.5,
+                          "y": 23.5
+                        },
+                        {
+                          "name": "DOWN",
+                          "x": 31,
+                          "y": 36.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.5,
+                        "y": 29.5
                       },
                       "customCollisionMask": [
                         [
@@ -5471,18 +5491,29 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
-                      "points": [],
+                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
+                      "points": [
+                        {
+                          "name": "TOP",
+                          "x": 31.5,
+                          "y": 23.5
+                        },
+                        {
+                          "name": "DOWN",
+                          "x": 31,
+                          "y": 36.5
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
                         "x": 0,
                         "y": 0
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 31.5,
+                        "y": 29.5
                       },
                       "customCollisionMask": [
                         [
@@ -5959,16 +5990,16 @@
               "IsCalledManually": false
             },
             {
+              "acceleration": 900,
+              "maxSpeed": 400,
               "name": "TopDownMovement",
               "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "ignoreDefaultControls": false,
-              "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
               "customIsometryAngle": 30,
               "deceleration": 100000,
-              "maxSpeed": 200,
               "movementAngleOffset": 0,
               "rotateObject": false,
               "viewpoint": "TopDown"
@@ -6635,6 +6666,83 @@
                 "Boneco",
                 "Animation"
               ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "Door",
+                "Animation"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Padronizando a angulação da porta, 0 = cima<=>baixo | 270 = direita<=>esquerda"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "90"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "270"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "180"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -7071,6 +7179,221 @@
                 "Animation",
                 "=",
                 "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Abrir porta ao passar por ela"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "Door",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Door",
+                "is_open",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Door",
+                "is_open",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+              },
+              "parameters": [
+                "Door",
+                "Animation"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::XVelocity"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "TopDownMovement",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "270"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::XVelocity"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "TopDownMovement",
+                    "<",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "270"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::YVelocity"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "TopDownMovement",
+                    "<",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Flippable",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::YVelocity"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "TopDownMovement",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Angle"
+                  },
+                  "parameters": [
+                    "Door",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FlippableCapability::FlippableBehavior::FlipY"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Flippable",
+                    "yes"
+                  ]
+                }
               ]
             }
           ]
