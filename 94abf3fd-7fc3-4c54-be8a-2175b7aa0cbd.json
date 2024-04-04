@@ -424,10 +424,10 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Phases/Sprites/DoorSprite.png",
+        "file": "assets/Phases/Sprites/doors/DoorSprite.png",
         "kind": "image",
         "metadata": "",
-        "name": "assets\\Phases\\Sprites\\DoorSprite.png",
+        "name": "assets\\Phases\\Sprites\\doors\\DoorSprite.png",
         "smoothed": false,
         "userAdded": true
       },
@@ -608,6 +608,24 @@
         "kind": "image",
         "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
         "name": "assets\\Phases\\TiledSprites\\TiledWoodWall.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/doors/DoorSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Phases\\Sprites\\doors\\DoorSprite2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/doors/DoorSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
         "smoothed": false,
         "userAdded": false
       }
@@ -3819,7 +3837,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.3925161175488518,
+        "zoomFactor": 0.7130377630690931,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5339,13 +5357,85 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.1,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\DoorSprite.png",
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 23
+                          },
+                          {
+                            "x": 64,
+                            "y": 23
+                          },
+                          {
+                            "x": 64,
+                            "y": 37
+                          },
+                          {
+                            "x": 0,
+                            "y": 37
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 23
+                          },
+                          {
+                            "x": 64,
+                            "y": 23
+                          },
+                          {
+                            "x": 64,
+                            "y": 37
+                          },
+                          {
+                            "x": 0,
+                            "y": 37
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5384,17 +5474,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "NewTiledSprite",
-          "texture": "NewTiledSprite",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
         },
         {
           "adaptCollisionMaskAutomatically": true,
@@ -5774,7 +5853,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "facc84df0a5bdca0fc3187527f6033836af9053053b0b4ac980290470555a6db",
           "name": "Boneco",
           "type": "Sprite",
@@ -5888,11 +5967,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -5924,11 +6003,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -5960,11 +6039,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6009,11 +6088,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6045,11 +6124,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6081,11 +6160,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6130,11 +6209,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6166,11 +6245,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6202,11 +6281,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6251,11 +6330,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6287,11 +6366,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6323,11 +6402,11 @@
                         [
                           {
                             "x": 2,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
-                            "y": 0
+                            "y": 5.5
                           },
                           {
                             "x": 14,
@@ -6427,9 +6506,6 @@
           },
           {
             "objectName": "Door"
-          },
-          {
-            "objectName": "NewTiledSprite"
           },
           {
             "objectName": "Barrel"
