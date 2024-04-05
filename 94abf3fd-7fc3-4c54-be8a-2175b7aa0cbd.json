@@ -3846,7 +3846,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 1.2121641972174628,
+        "zoomFactor": 0.5653158055126765,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4806,7 +4806,7 @@
           "persistentUuid": "f5d5ccef-8576-4087-8aba-665ae4eab128",
           "width": 0,
           "x": 3136,
-          "y": -192,
+          "y": -186,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -5259,9 +5259,25 @@
           "name": "Boneco",
           "persistentUuid": "61f22136-2450-48b1-ae0c-1cdfa1ccbb9b",
           "width": 46,
-          "x": 3058,
-          "y": -430,
+          "x": 1984,
+          "y": -494,
           "zOrder": 18,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "ea746be3-9d6c-4750-bacb-7b0f0ccc0f4d",
+          "width": 64,
+          "x": 2080,
+          "y": -512,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5349,7 +5365,12 @@
           "width": 64,
           "variables": [],
           "effects": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ]
         },
         {
           "adaptCollisionMaskAutomatically": false,
@@ -5366,7 +5387,12 @@
             }
           ],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "NewSprite",
@@ -5407,19 +5433,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 23
+                            "y": 26.5
                           },
                           {
                             "x": 64,
-                            "y": 23
+                            "y": 26.5
                           },
                           {
                             "x": 64,
-                            "y": 37
+                            "y": 33.5
                           },
                           {
                             "x": 0,
-                            "y": 37
+                            "y": 33.5
                           }
                         ]
                       ]
@@ -5454,19 +5480,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 23
+                            "y": 26.5
                           },
                           {
                             "x": 64,
-                            "y": 23
+                            "y": 26.5
                           },
                           {
                             "x": 64,
-                            "y": 37
+                            "y": 33.5
                           },
                           {
                             "x": 0,
-                            "y": 37
+                            "y": 33.5
                           }
                         ]
                       ]
@@ -5501,19 +5527,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 23
+                            "y": 26.5
                           },
                           {
                             "x": 64,
-                            "y": 23
+                            "y": 26.5
                           },
                           {
                             "x": 64,
-                            "y": 37
+                            "y": 33.5
                           },
                           {
                             "x": 0,
-                            "y": 37
+                            "y": 33.5
                           }
                         ]
                       ]
@@ -5525,14 +5551,19 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Barrel",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "NewSprite",
@@ -5562,19 +5593,55 @@
                         [
                           {
                             "x": 11,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 15.5,
+                            "y": 14.5
+                          },
+                          {
+                            "x": 25,
+                            "y": 8.5
+                          },
+                          {
+                            "x": 40.5,
                             "y": 9
                           },
                           {
-                            "x": 53,
-                            "y": 9
+                            "x": 48.5,
+                            "y": 13
                           },
                           {
                             "x": 53,
+                            "y": 26.5
+                          },
+                          {
+                            "x": 53,
+                            "y": 43
+                          },
+                          {
+                            "x": 49.5,
+                            "y": 50
+                          },
+                          {
+                            "x": 45,
+                            "y": 54.5
+                          },
+                          {
+                            "x": 39.5,
                             "y": 56
+                          },
+                          {
+                            "x": 22.5,
+                            "y": 55.5
+                          },
+                          {
+                            "x": 16.5,
+                            "y": 53.5
                           },
                           {
                             "x": 11,
-                            "y": 56
+                            "y": 46.5
                           }
                         ]
                       ]
@@ -5647,14 +5714,19 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
+          "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "Stairs",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "LightObstacleBehavior",
+              "type": "Lighting::LightObstacleBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "c7952f018a0cccf6a9249a3e3d71cee63523920bc92d98333d00be922d43e955_stairs gray_b",
@@ -5683,20 +5755,28 @@
                       "customCollisionMask": [
                         [
                           {
+                            "x": 2,
+                            "y": 205
+                          },
+                          {
                             "x": 0,
                             "y": 104
                           },
                           {
-                            "x": 263,
-                            "y": 104
+                            "x": 262,
+                            "y": 203.5
                           },
                           {
                             "x": 263,
                             "y": 311
                           },
                           {
-                            "x": 0,
-                            "y": 311
+                            "x": 224,
+                            "y": 310.5
+                          },
+                          {
+                            "x": 63,
+                            "y": 230.5
                           }
                         ]
                       ]
@@ -6607,6 +6687,34 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "LuzNegra",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 50,
+            "color": "0;0;0",
+            "debugMode": false,
+            "texture": ""
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "LuzPlayer",
+          "type": "Lighting::LightObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "radius": 300,
+            "color": "255;255;255",
+            "debugMode": false,
+            "texture": ""
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -6650,6 +6758,12 @@
           },
           {
             "objectName": "Hearth"
+          },
+          {
+            "objectName": "LuzNegra"
+          },
+          {
+            "objectName": "LuzPlayer"
           }
         ]
       },
@@ -6677,10 +6791,95 @@
                 "Barrel",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Boneco",
+                "Stairs",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "LuzPlayer",
+                "=",
+                "Boneco.PointX(\"Center\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "LuzPlayer",
+                "=",
+                "Boneco.PointY(\"Center\")"
+              ]
             }
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Spike",
+                "LuzPlayer",
+                "220",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Spike"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Spike",
+                "LuzPlayer",
+                "220",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Spike",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6764,6 +6963,18 @@
                 "Health",
                 "Boneco.life",
                 "Boneco.max_life"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "LuzPlayer",
+                "Boneco.PointX(\"Center\")",
+                "Boneco.PointY(\"Center\")",
+                "\"Lighting\""
               ]
             }
           ],
@@ -7333,7 +7544,6 @@
           "comment": "Abrir porta ao passar por ela"
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7359,27 +7569,7 @@
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Door",
-                "is_open",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
-              },
-              "parameters": [
-                "Door",
-                "Animation"
-              ]
-            }
-          ],
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -7416,6 +7606,16 @@
                     "Flippable",
                     "yes"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Door",
+                    "is_open",
+                    "True"
+                  ]
                 }
               ]
             },
@@ -7454,6 +7654,16 @@
                     "Flippable",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Door",
+                    "is_open",
+                    "True"
+                  ]
                 }
               ]
             },
@@ -7492,6 +7702,16 @@
                     "Flippable",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Door",
+                    "is_open",
+                    "True"
+                  ]
                 }
               ]
             },
@@ -7529,6 +7749,52 @@
                     "Door",
                     "Flippable",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Door",
+                    "is_open",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Door",
+                    "is_open",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PlayAnimation"
+                  },
+                  "parameters": [
+                    "Door",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Door",
+                    "LightObstacleBehavior",
+                    "no"
                   ]
                 }
               ]
@@ -7839,6 +8105,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7963,11 +8230,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "layers": [
@@ -8080,6 +8342,23 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 128,
+          "ambientLightColorG": 128,
+          "ambientLightColorR": 128,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "isLocked": false,
+          "name": "Lighting",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -8098,6 +8377,10 @@
         {
           "name": "Health",
           "type": "Health::Health"
+        },
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
         },
         {
           "name": "Opacity",
