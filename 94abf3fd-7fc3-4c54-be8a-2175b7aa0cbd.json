@@ -641,9 +641,1594 @@
     ],
     "resourceFolders": []
   },
-  "objects": [],
+  "objects": [
+    {
+      "assetStoreId": "",
+      "height": 64,
+      "name": "RockGround",
+      "texture": "assets\\Phases\\TiledSprites\\TiledRockGround.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Spike",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\SpikeSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 3
+                      },
+                      {
+                        "x": 60,
+                        "y": 3
+                      },
+                      {
+                        "x": 60,
+                        "y": 60
+                      },
+                      {
+                        "x": 2,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Blood",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\BloodSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5
+                      },
+                      {
+                        "x": 58,
+                        "y": 5
+                      },
+                      {
+                        "x": 58,
+                        "y": 61
+                      },
+                      {
+                        "x": 2,
+                        "y": 61
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Chest",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\ChestSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 5,
+                        "y": 15
+                      },
+                      {
+                        "x": 59,
+                        "y": 15
+                      },
+                      {
+                        "x": 59,
+                        "y": 52
+                      },
+                      {
+                        "x": 5,
+                        "y": 52
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 64,
+      "name": "RockWall",
+      "texture": "assets\\Phases\\TiledSprites\\TiledRockWall.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 64,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Door",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "is_open",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\doors\\DoorSprite.png",
+                  "points": [
+                    {
+                      "name": "TOP",
+                      "x": 31.5,
+                      "y": 23.5
+                    },
+                    {
+                      "name": "DOWN",
+                      "x": 31,
+                      "y": 36.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 31.5,
+                    "y": 29.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 64,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 33.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\doors\\DoorSprite2.png",
+                  "points": [
+                    {
+                      "name": "TOP",
+                      "x": 31.5,
+                      "y": 23.5
+                    },
+                    {
+                      "name": "DOWN",
+                      "x": 31,
+                      "y": 36.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 31.5,
+                    "y": 29.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 64,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 33.5
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
+                  "points": [
+                    {
+                      "name": "TOP",
+                      "x": 31.5,
+                      "y": 23.5
+                    },
+                    {
+                      "name": "DOWN",
+                      "x": 31,
+                      "y": 36.5
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": false,
+                    "name": "centre",
+                    "x": 31.5,
+                    "y": 29.5
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 64,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 64,
+                        "y": 33.5
+                      },
+                      {
+                        "x": 0,
+                        "y": 33.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Barrel",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\BarrelSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 27.5
+                      },
+                      {
+                        "x": 15.5,
+                        "y": 14.5
+                      },
+                      {
+                        "x": 25,
+                        "y": 8.5
+                      },
+                      {
+                        "x": 40.5,
+                        "y": 9
+                      },
+                      {
+                        "x": 48.5,
+                        "y": 13
+                      },
+                      {
+                        "x": 53,
+                        "y": 26.5
+                      },
+                      {
+                        "x": 53,
+                        "y": 43
+                      },
+                      {
+                        "x": 49.5,
+                        "y": 50
+                      },
+                      {
+                        "x": 45,
+                        "y": 54.5
+                      },
+                      {
+                        "x": 39.5,
+                        "y": 56
+                      },
+                      {
+                        "x": 22.5,
+                        "y": 55.5
+                      },
+                      {
+                        "x": 16.5,
+                        "y": 53.5
+                      },
+                      {
+                        "x": 11,
+                        "y": 46.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Cobweb",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\CobwebSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 3,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 7.5
+                      },
+                      {
+                        "x": 58.5,
+                        "y": 45.5
+                      },
+                      {
+                        "x": 2.5,
+                        "y": 45.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "Stairs",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "c7952f018a0cccf6a9249a3e3d71cee63523920bc92d98333d00be922d43e955_stairs gray_b",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\StairsSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 205
+                      },
+                      {
+                        "x": 0,
+                        "y": 104
+                      },
+                      {
+                        "x": 262,
+                        "y": 203.5
+                      },
+                      {
+                        "x": 263,
+                        "y": 311
+                      },
+                      {
+                        "x": 224,
+                        "y": 310.5
+                      },
+                      {
+                        "x": 63,
+                        "y": 230.5
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "Carpet",
+      "texture": "assets\\Phases\\TiledSprites\\TiledCarpet.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BossDoor",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "8453897a00e610fec59d71df2332d63fe8355089cccebd28396a2135c42873b4_Door",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\BossDoorSprite.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 61,
+                        "y": 33
+                      },
+                      {
+                        "x": 219,
+                        "y": 33
+                      },
+                      {
+                        "x": 219,
+                        "y": 286
+                      },
+                      {
+                        "x": 61,
+                        "y": 286
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "facc84df0a5bdca0fc3187527f6033836af9053053b0b4ac980290470555a6db",
+      "name": "Boneco",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "dash_in_delay",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
+          "name": "life",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "folded": true,
+          "name": "max_life",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "folded": true,
+          "name": "current_life_ui",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "invulnerability",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Glow",
+          "name": "dash_light",
+          "doubleParameters": {
+            "distance": 5,
+            "innerStrength": 1,
+            "outerStrength": 1
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 3,
+          "CurrentHealth": 0,
+          "MaxHealth": 3,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown",
+          "Up": "w",
+          "Left": "a",
+          "Right": "d",
+          "Down": "s",
+          "Topdown": "TopDownMovement"
+        },
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.9,
+          "RightwardSpeed": 0.9,
+          "UpwardSpeed": 0.9,
+          "DownwardSpeed": 0.9,
+          "FollowOnX": true,
+          "FollowOnY": true,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 2.0247e-320,
+          "LogRightwardSpeed": 2.0247e-320,
+          "LogDownwardSpeed": 2.0247e-320,
+          "LogUpwardSpeed": 2.0247e-320,
+          "DelayedCenterX": 2.0247e-320,
+          "DelayedCenterY": 2.0247e-320,
+          "ForecastHistoryMeanX": 2.0247e-320,
+          "ForecastHistoryMeanY": 2.0247e-320,
+          "ForecastHistoryVarianceX": 2.0247e-320,
+          "ForecastHistoryCovariance": 2.0247e-320,
+          "ForecastHistoryLinearA": 2.0247e-320,
+          "ForecastHistoryLinearB": 2.0247e-320,
+          "ForecastedX": 2.0247e-320,
+          "ForecastedY": 2.0247e-320,
+          "ProjectedNewestX": 2.0247e-320,
+          "ProjectedNewestY": 2.0247e-320,
+          "ProjectedOldestX": 2.0247e-320,
+          "ProjectedOldestY": 2.0247e-320,
+          "ForecastHistoryVarianceY": 2.0247e-320,
+          "Index": 2.0247e-320,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 2.0247e-320,
+          "WaitingSpeedXMax": 2.0247e-320,
+          "WaitingSpeedYMax": 2.0247e-320,
+          "WaitingEnd": 2.0247e-320,
+          "CameraDelayCatchUpDuration": 2.0247e-320,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000.000000007454,
+          "OldY": 9000.000000007454,
+          "IsCalledManually": false
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "acceleration": 900,
+          "maxSpeed": 400,
+          "ignoreDefaultControls": false,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "customIsometryAngle": 30,
+          "deceleration": 100000,
+          "movementAngleOffset": 0,
+          "rotateObject": false,
+          "viewpoint": "TopDown"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\DOWN\\Down_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\DOWN\\Down_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\DOWN\\Down_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Left",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\LEFT\\Left_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\LEFT\\Left_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\LEFT\\Left_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Right",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.1667,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 5.5
+                      },
+                      {
+                        "x": 14,
+                        "y": 16
+                      },
+                      {
+                        "x": 2,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Hearth",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Hearth",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\Hearth.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 9
+                      },
+                      {
+                        "x": 57,
+                        "y": 9
+                      },
+                      {
+                        "x": 57,
+                        "y": 51
+                      },
+                      {
+                        "x": 7,
+                        "y": 51
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "LuzPlayer",
+      "type": "Lighting::LightObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "radius": 300,
+        "color": "255;255;255",
+        "debugMode": false,
+        "texture": ""
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "WoodenWallCorner",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\WoodCornerWall.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WoodGround",
+      "texture": "assets\\Phases\\TiledSprites\\TiledWoodGround.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "height": 32,
+      "name": "WoodWall",
+      "texture": "assets\\Phases\\TiledSprites\\TiledWoodWall.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
   "objectsFolderStructure": {
-    "folderName": "__ROOT"
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "folderName": "Phases",
+        "children": [
+          {
+            "folderName": "Room",
+            "children": [
+              {
+                "folderName": "Rock",
+                "children": [
+                  {
+                    "objectName": "RockWall"
+                  },
+                  {
+                    "objectName": "RockGround"
+                  }
+                ]
+              },
+              {
+                "folderName": "Wood",
+                "children": [
+                  {
+                    "objectName": "WoodWall"
+                  },
+                  {
+                    "objectName": "WoodGround"
+                  },
+                  {
+                    "objectName": "WoodenWallCorner"
+                  }
+                ]
+              },
+              {
+                "objectName": "BossDoor"
+              },
+              {
+                "objectName": "Blood"
+              },
+              {
+                "objectName": "Spike"
+              },
+              {
+                "objectName": "Chest"
+              },
+              {
+                "objectName": "Door"
+              },
+              {
+                "objectName": "Barrel"
+              },
+              {
+                "objectName": "Cobweb"
+              },
+              {
+                "objectName": "Stairs"
+              },
+              {
+                "objectName": "Carpet"
+              }
+            ]
+          },
+          {
+            "folderName": "GUI",
+            "children": [
+              {
+                "objectName": "Hearth"
+              }
+            ]
+          },
+          {
+            "folderName": "Characters",
+            "children": [
+              {
+                "objectName": "Boneco"
+              }
+            ]
+          },
+          {
+            "objectName": "LuzPlayer"
+          }
+        ]
+      }
+    ]
   },
   "objectsGroups": [],
   "variables": [
@@ -3846,7 +5431,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.5653158055126765,
+        "zoomFactor": 0.5117784035210587,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -3874,7 +5459,7 @@
           "depth": 1,
           "height": 53,
           "layer": "",
-          "name": "Blood_1",
+          "name": "Blood",
           "persistentUuid": "a2b6fe03-b732-4669-93f8-625f991c719b",
           "width": 53,
           "x": 2854,
@@ -4910,7 +6495,7 @@
           "depth": 1,
           "height": 75,
           "layer": "",
-          "name": "Blood_1",
+          "name": "Blood",
           "persistentUuid": "fc3d5bf1-fbdc-43b5-93d9-3843c370b20c",
           "width": 75,
           "x": 3360,
@@ -4926,7 +6511,7 @@
           "depth": 1,
           "height": 52,
           "layer": "",
-          "name": "Blood_1",
+          "name": "Blood",
           "persistentUuid": "195b09d4-23f2-4795-9ffb-a3e9b99f28ea",
           "width": 52,
           "x": 3434,
@@ -5259,8 +6844,8 @@
           "name": "Boneco",
           "persistentUuid": "61f22136-2450-48b1-ae0c-1cdfa1ccbb9b",
           "width": 46,
-          "x": 1984,
-          "y": -494,
+          "x": 2080,
+          "y": -128,
           "zOrder": 18,
           "numberProperties": [],
           "stringProperties": [],
@@ -5283,1490 +6868,567 @@
           "initialVariables": []
         }
       ],
-      "objects": [
+      "objects": [],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [
         {
-          "assetStoreId": "",
-          "height": 64,
-          "name": "RockGround",
-          "texture": "assets\\Phases\\TiledSprites\\TiledRockGround.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 64,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PhasesEvents"
+        }
+      ],
+      "layers": [
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Blood_1",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
             {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\BloodSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5
-                          },
-                          {
-                            "x": 58,
-                            "y": 5
-                          },
-                          {
-                            "x": 58,
-                            "y": 61
-                          },
-                          {
-                            "x": 2,
-                            "y": 61
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 64,
-          "name": "RockWall",
-          "texture": "assets\\Phases\\TiledSprites\\TiledRockWall.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 64,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Door",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "is_open",
-              "type": "boolean",
-              "value": false
-            }
-          ],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite.png",
-                      "points": [
-                        {
-                          "name": "TOP",
-                          "x": 31.5,
-                          "y": 23.5
-                        },
-                        {
-                          "name": "DOWN",
-                          "x": 31,
-                          "y": 36.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 31.5,
-                        "y": 29.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 64,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 64,
-                            "y": 33.5
-                          },
-                          {
-                            "x": 0,
-                            "y": 33.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite2.png",
-                      "points": [
-                        {
-                          "name": "TOP",
-                          "x": 31.5,
-                          "y": 23.5
-                        },
-                        {
-                          "name": "DOWN",
-                          "x": 31,
-                          "y": 36.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 31.5,
-                        "y": 29.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 64,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 64,
-                            "y": 33.5
-                          },
-                          {
-                            "x": 0,
-                            "y": 33.5
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\doors\\DoorSprite3.png",
-                      "points": [
-                        {
-                          "name": "TOP",
-                          "x": 31.5,
-                          "y": 23.5
-                        },
-                        {
-                          "name": "DOWN",
-                          "x": 31,
-                          "y": 36.5
-                        }
-                      ],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": false,
-                        "name": "centre",
-                        "x": 31.5,
-                        "y": 29.5
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 64,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 64,
-                            "y": 33.5
-                          },
-                          {
-                            "x": 0,
-                            "y": 33.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Barrel",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\BarrelSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 11,
-                            "y": 27.5
-                          },
-                          {
-                            "x": 15.5,
-                            "y": 14.5
-                          },
-                          {
-                            "x": 25,
-                            "y": 8.5
-                          },
-                          {
-                            "x": 40.5,
-                            "y": 9
-                          },
-                          {
-                            "x": 48.5,
-                            "y": 13
-                          },
-                          {
-                            "x": 53,
-                            "y": 26.5
-                          },
-                          {
-                            "x": 53,
-                            "y": 43
-                          },
-                          {
-                            "x": 49.5,
-                            "y": 50
-                          },
-                          {
-                            "x": 45,
-                            "y": 54.5
-                          },
-                          {
-                            "x": 39.5,
-                            "y": 56
-                          },
-                          {
-                            "x": 22.5,
-                            "y": 55.5
-                          },
-                          {
-                            "x": 16.5,
-                            "y": 53.5
-                          },
-                          {
-                            "x": 11,
-                            "y": 46.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Cobweb",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\CobwebSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 3,
-                            "y": 7.5
-                          },
-                          {
-                            "x": 58.5,
-                            "y": 7.5
-                          },
-                          {
-                            "x": 58.5,
-                            "y": 45.5
-                          },
-                          {
-                            "x": 2.5,
-                            "y": 45.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "",
-          "name": "Stairs",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "LightObstacleBehavior",
-              "type": "Lighting::LightObstacleBehavior"
-            }
-          ],
-          "animations": [
-            {
-              "name": "c7952f018a0cccf6a9249a3e3d71cee63523920bc92d98333d00be922d43e955_stairs gray_b",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\StairsSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 205
-                          },
-                          {
-                            "x": 0,
-                            "y": 104
-                          },
-                          {
-                            "x": 262,
-                            "y": 203.5
-                          },
-                          {
-                            "x": 263,
-                            "y": 311
-                          },
-                          {
-                            "x": 224,
-                            "y": 310.5
-                          },
-                          {
-                            "x": 63,
-                            "y": 230.5
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Chest",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite2",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\ChestSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 5,
-                            "y": 15
-                          },
-                          {
-                            "x": 59,
-                            "y": 15
-                          },
-                          {
-                            "x": 59,
-                            "y": 52
-                          },
-                          {
-                            "x": 5,
-                            "y": 52
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Spike",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite2",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\SpikeSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 3
-                          },
-                          {
-                            "x": 60,
-                            "y": 3
-                          },
-                          {
-                            "x": 60,
-                            "y": 60
-                          },
-                          {
-                            "x": 2,
-                            "y": 60
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "Carpet",
-          "texture": "assets\\Phases\\TiledSprites\\TiledCarpet.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "BossDoor",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "8453897a00e610fec59d71df2332d63fe8355089cccebd28396a2135c42873b4_Door",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\BossDoorSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 61,
-                            "y": 33
-                          },
-                          {
-                            "x": 219,
-                            "y": 33
-                          },
-                          {
-                            "x": 219,
-                            "y": 286
-                          },
-                          {
-                            "x": 61,
-                            "y": 286
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": false,
-          "assetStoreId": "facc84df0a5bdca0fc3187527f6033836af9053053b0b4ac980290470555a6db",
-          "name": "Boneco",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [
-            {
-              "folded": true,
-              "name": "dash_in_delay",
-              "type": "boolean",
-              "value": false
-            },
-            {
-              "folded": true,
-              "name": "life",
-              "type": "number",
-              "value": 3
-            },
-            {
-              "folded": true,
-              "name": "max_life",
-              "type": "number",
-              "value": 3
-            },
-            {
-              "folded": true,
-              "name": "current_life_ui",
-              "type": "number",
-              "value": 0
-            },
-            {
-              "folded": true,
-              "name": "invulnerability",
-              "type": "boolean",
-              "value": false
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
             }
           ],
           "effects": [
             {
-              "effectType": "Glow",
-              "name": "dash_light",
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
               "doubleParameters": {
-                "distance": 5,
-                "innerStrength": 1,
-                "outerStrength": 1
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
               },
               "stringParameters": {
-                "color": "255;255;255"
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
               },
               "booleanParameters": {}
             }
-          ],
-          "behaviors": [
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
             {
-              "name": "Health",
-              "type": "Health::Health",
-              "Health": 3,
-              "CurrentHealth": 0,
-              "MaxHealth": 3,
-              "DamageCooldown": 0,
-              "AllowOverHealing": false,
-              "IsHealthJustDamaged": false,
-              "DamageToBeApplied": 0,
-              "HitAtLeastOnce": false,
-              "ChanceToDodge": 0,
-              "IsJustDodged": false,
-              "HealToBeApplied": 0,
-              "HealthRegenRate": 0,
-              "HealthRegenDelay": 0,
-              "IsJustHealed": false,
-              "CurrentShieldPoints": 2.0247e-320,
-              "MaxShieldPoints": 0,
-              "ShieldDuration": 5,
-              "ShieldRegenRate": 0,
-              "BlockExcessDamage": false,
-              "ShieldRegenDelay": 0,
-              "IsShieldJustDamaged": false,
-              "ShieldDamageTaken": 2.0247e-320,
-              "FlatDamageReduction": 0,
-              "PercentDamageReduction": 0
-            },
-            {
-              "name": "RemapForTopdown",
-              "type": "BehaviorRemapper::RemapForTopdown",
-              "Up": "w",
-              "Left": "a",
-              "Right": "d",
-              "Down": "s",
-              "Topdown": "TopDownMovement"
-            },
-            {
-              "name": "SmoothCamera",
-              "type": "SmoothCamera::SmoothCamera",
-              "LeftwardSpeed": 0.9,
-              "RightwardSpeed": 0.9,
-              "UpwardSpeed": 0.9,
-              "DownwardSpeed": 0.9,
-              "FollowOnX": true,
-              "FollowOnY": true,
-              "FollowFreeAreaLeft": 0,
-              "FollowFreeAreaRight": 0,
-              "FollowFreeAreaTop": 0,
-              "FollowFreeAreaBottom": 0,
-              "CameraOffsetX": 0,
-              "CameraOffsetY": 0,
-              "CameraDelay": 0,
-              "ForecastTime": 0,
-              "ForecastHistoryDuration": 0,
-              "LogLeftwardSpeed": 2.0247e-320,
-              "LogRightwardSpeed": 2.0247e-320,
-              "LogDownwardSpeed": 2.0247e-320,
-              "LogUpwardSpeed": 2.0247e-320,
-              "DelayedCenterX": 2.0247e-320,
-              "DelayedCenterY": 2.0247e-320,
-              "ForecastHistoryMeanX": 2.0247e-320,
-              "ForecastHistoryMeanY": 2.0247e-320,
-              "ForecastHistoryVarianceX": 2.0247e-320,
-              "ForecastHistoryCovariance": 2.0247e-320,
-              "ForecastHistoryLinearA": 2.0247e-320,
-              "ForecastHistoryLinearB": 2.0247e-320,
-              "ForecastedX": 2.0247e-320,
-              "ForecastedY": 2.0247e-320,
-              "ProjectedNewestX": 2.0247e-320,
-              "ProjectedNewestY": 2.0247e-320,
-              "ProjectedOldestX": 2.0247e-320,
-              "ProjectedOldestY": 2.0247e-320,
-              "ForecastHistoryVarianceY": 2.0247e-320,
-              "Index": 2.0247e-320,
-              "CameraDelayCatchUpSpeed": 0,
-              "CameraExtraDelay": 2.0247e-320,
-              "WaitingSpeedXMax": 2.0247e-320,
-              "WaitingSpeedYMax": 2.0247e-320,
-              "WaitingEnd": 2.0247e-320,
-              "CameraDelayCatchUpDuration": 2.0247e-320,
-              "LeftwardSpeedMax": 9000,
-              "RightwardSpeedMax": 9000,
-              "UpwardSpeedMax": 9000,
-              "DownwardSpeedMax": 9000,
-              "OldX": 9000.000000007454,
-              "OldY": 9000.000000007454,
-              "IsCalledManually": false
-            },
-            {
-              "name": "TopDownMovement",
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-              "acceleration": 900,
-              "maxSpeed": 400,
-              "ignoreDefaultControls": false,
-              "allowDiagonals": true,
-              "angleOffset": 0,
-              "angularMaxSpeed": 180,
-              "customIsometryAngle": 30,
-              "deceleration": 100000,
-              "movementAngleOffset": 0,
-              "rotateObject": false,
-              "viewpoint": "TopDown"
-            }
-          ],
-          "animations": [
-            {
-              "name": "Down",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1667,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\DOWN\\Down_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\DOWN\\Down_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\DOWN\\Down_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Left",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1667,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\LEFT\\Left_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\LEFT\\Left_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\LEFT\\Left_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Up",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1667,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\UP\\Up_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Right",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.1667,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\RIGHT\\Right_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 5.5
-                          },
-                          {
-                            "x": 14,
-                            "y": 16
-                          },
-                          {
-                            "x": 2,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
             }
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Hearth",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "Hearth",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\Player\\Hearth.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 7,
-                            "y": 9
-                          },
-                          {
-                            "x": 57,
-                            "y": 9
-                          },
-                          {
-                            "x": 57,
-                            "y": 51
-                          },
-                          {
-                            "x": 7,
-                            "y": 51
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "LuzNegra",
-          "type": "Lighting::LightObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 50,
-            "color": "0;0;0",
-            "debugMode": false,
-            "texture": ""
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "LuzPlayer",
-          "type": "Lighting::LightObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "radius": 300,
-            "color": "255;255;255",
-            "debugMode": false,
-            "texture": ""
-          }
+          "ambientLightColorB": 128,
+          "ambientLightColorG": 128,
+          "ambientLightColorR": 128,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "isLocked": false,
+          "name": "Lighting",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "RockGround"
-          },
-          {
-            "objectName": "Spike"
-          },
-          {
-            "objectName": "Blood_1"
-          },
-          {
-            "objectName": "Chest"
-          },
-          {
-            "objectName": "RockWall"
-          },
-          {
-            "objectName": "Door"
-          },
-          {
-            "objectName": "Barrel"
-          },
-          {
-            "objectName": "Cobweb"
-          },
-          {
-            "objectName": "Stairs"
-          },
-          {
-            "objectName": "Carpet"
-          },
-          {
-            "objectName": "BossDoor"
-          },
-          {
-            "objectName": "Boneco"
-          },
-          {
-            "objectName": "Hearth"
-          },
-          {
-            "objectName": "LuzNegra"
-          },
-          {
-            "objectName": "LuzPlayer"
-          }
-        ]
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health"
+        },
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    },
+    {
+      "b": 5,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "Fase_352",
+      "name": "Fase#2",
+      "r": 5,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 5,
+      "uiSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.22,
+        "snap": true,
+        "zoomFactor": 0.835359182705995,
+        "windowMask": false
       },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 23,
+          "height": 450,
+          "layer": "",
+          "name": "WoodGround",
+          "persistentUuid": "ff715ec1-462b-4d74-9440-388ce177522d",
+          "width": 416,
+          "x": 815,
+          "y": 335,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 448,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "6e326386-acc4-4b20-a866-d4dc6d8da216",
+          "width": 32,
+          "x": 1008,
+          "y": 112,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 416,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "49eecee7-9cbd-45bd-987e-09dbc611cb67",
+          "width": 32,
+          "x": 1248,
+          "y": 352,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 416,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "517adfc9-23bb-4576-97dd-249c44df01de",
+          "width": 32,
+          "x": 768,
+          "y": 352,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 448,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "525c88d0-46f3-43c9-ab66-b6596f5b02a3",
+          "width": 32,
+          "x": 1008,
+          "y": 560,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "e5c57328-1c02-45fa-bc94-620cdd929a5f",
+          "width": 32,
+          "x": 1248,
+          "y": 768,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "8229205e-4671-4029-b47b-efe754612506",
+          "width": 32,
+          "x": 768,
+          "y": 768,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "4cd98101-2c3e-4801-9d89-465f2cd1ca8c",
+          "width": 32,
+          "x": 768,
+          "y": 320,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "0f2a8b37-dcc9-4de0-9f69-e218bdfb1b86",
+          "width": 0,
+          "x": 768,
+          "y": 320,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "4a92f2ac-5e0b-4c0d-ba7c-214f828eb9a6",
+          "width": 0,
+          "x": 1248,
+          "y": 320,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 46,
+          "layer": "",
+          "name": "Boneco",
+          "persistentUuid": "e7756aa5-a83c-4b96-a4cd-4b6c09650f3b",
+          "width": 46,
+          "x": 1008,
+          "y": 528,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT"
+      },
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PhasesEvents"
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": true,
+          "isLightingLayer": true,
+          "isLocked": false,
+          "name": "Lighting",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": [
+        {
+          "name": "Animation",
+          "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "Effect",
+          "type": "EffectCapability::EffectBehavior"
+        },
+        {
+          "name": "Flippable",
+          "type": "FlippableCapability::FlippableBehavior"
+        },
+        {
+          "name": "Health",
+          "type": "Health::Health"
+        },
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        },
+        {
+          "name": "Opacity",
+          "type": "OpacityCapability::OpacityBehavior"
+        },
+        {
+          "name": "RemapForTopdown",
+          "type": "BehaviorRemapper::RemapForTopdown"
+        },
+        {
+          "name": "Resizable",
+          "type": "ResizableCapability::ResizableBehavior"
+        },
+        {
+          "name": "Scale",
+          "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera"
+        },
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
+    }
+  ],
+  "externalEvents": [
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "PhasesEvents",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "BlockMovimentCollision"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "StartScene"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "MovimentAnimation"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "PlayerInteractions"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "Light"
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "BlockMovimentCollision",
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -6788,6 +7450,16 @@
               },
               "parameters": [
                 "Boneco",
+                "Stairs",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Boneco",
                 "Barrel",
                 ""
               ]
@@ -6798,88 +7470,30 @@
               },
               "parameters": [
                 "Boneco",
-                "Stairs",
+                "WoodWall",
                 ""
               ]
             },
             {
               "type": {
-                "value": "MettreX"
+                "value": "SeparateFromObjects"
               },
               "parameters": [
-                "LuzPlayer",
-                "=",
-                "Boneco.PointX(\"Center\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "MettreY"
-              },
-              "parameters": [
-                "LuzPlayer",
-                "=",
-                "Boneco.PointY(\"Center\")"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "Distance"
-              },
-              "parameters": [
-                "Spike",
-                "LuzPlayer",
-                "220",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "Spike"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Spike",
-                "LuzPlayer",
-                "220",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Montre"
-              },
-              "parameters": [
-                "Spike",
+                "Boneco",
+                "WoodenWallCorner",
                 ""
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "StartScene",
+      "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -7093,7 +7707,14 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "MovimentAnimation",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -7530,7 +8151,14 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "PlayerInteractions",
+      "events": [
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -7544,6 +8172,7 @@
           "comment": "Abrir porta ao passar por ela"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8105,7 +8734,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8231,811 +8859,96 @@
             }
           ]
         }
-      ],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
-            }
-          ],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "Player",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
-        },
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "UI",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
-              },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
-            }
-          ]
-        },
-        {
-          "ambientLightColorB": 128,
-          "ambientLightColorG": 128,
-          "ambientLightColorR": 128,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": true,
-          "isLightingLayer": true,
-          "isLocked": false,
-          "name": "Lighting",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [],
-          "effects": []
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
-        },
-        {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Health",
-          "type": "Health::Health"
-        },
-        {
-          "name": "LightObstacleBehavior",
-          "type": "Lighting::LightObstacleBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "RemapForTopdown",
-          "type": "BehaviorRemapper::RemapForTopdown"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera"
-        },
-        {
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
-        }
       ]
     },
     {
-      "b": 5,
-      "disableInputWhenNotFocused": true,
-      "mangledName": "Fase_352",
-      "name": "Fase#2",
-      "r": 5,
-      "standardSortMethod": true,
-      "stopSoundsOnStartup": true,
-      "title": "",
-      "v": 5,
-      "uiSettings": {
-        "grid": true,
-        "gridType": "rectangular",
-        "gridWidth": 32,
-        "gridHeight": 32,
-        "gridOffsetX": 0,
-        "gridOffsetY": 0,
-        "gridColor": 10401023,
-        "gridAlpha": 0.22,
-        "snap": true,
-        "zoomFactor": 0.7817486425451811,
-        "windowMask": false
-      },
-      "objectsGroups": [],
-      "variables": [],
-      "instances": [
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "Light",
+      "events": [
         {
-          "angle": 270,
-          "customSize": true,
-          "depth": 23,
-          "height": 450,
-          "layer": "",
-          "name": "WoodGround",
-          "persistentUuid": "ff715ec1-462b-4d74-9440-388ce177522d",
-          "width": 416,
-          "x": 815,
-          "y": 335,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270,
-          "customSize": true,
-          "depth": 1,
-          "height": 448,
-          "layer": "",
-          "name": "WoodWall",
-          "persistentUuid": "6e326386-acc4-4b20-a866-d4dc6d8da216",
-          "width": 32,
-          "x": 1008,
-          "y": 112,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 416,
-          "layer": "",
-          "name": "WoodWall",
-          "persistentUuid": "49eecee7-9cbd-45bd-987e-09dbc611cb67",
-          "width": 32,
-          "x": 1248,
-          "y": 352,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 180,
-          "customSize": true,
-          "depth": 1,
-          "height": 416,
-          "layer": "",
-          "name": "WoodWall",
-          "persistentUuid": "517adfc9-23bb-4576-97dd-249c44df01de",
-          "width": 32,
-          "x": 768,
-          "y": 352,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": true,
-          "depth": 1,
-          "height": 448,
-          "layer": "",
-          "name": "WoodWall",
-          "persistentUuid": "525c88d0-46f3-43c9-ab66-b6596f5b02a3",
-          "width": 32,
-          "x": 1008,
-          "y": 560,
-          "zOrder": 2,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "e5c57328-1c02-45fa-bc94-620cdd929a5f",
-          "width": 32,
-          "x": 1248,
-          "y": 768,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 90,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "8229205e-4671-4029-b47b-efe754612506",
-          "width": 32,
-          "x": 768,
-          "y": 768,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 180,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "4cd98101-2c3e-4801-9d89-465f2cd1ca8c",
-          "width": 32,
-          "x": 768,
-          "y": 320,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 180,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "0f2a8b37-dcc9-4de0-9f69-e218bdfb1b86",
-          "width": 0,
-          "x": 768,
-          "y": 320,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "4a92f2ac-5e0b-4c0d-ba7c-214f828eb9a6",
-          "width": 0,
-          "x": 1248,
-          "y": 320,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "layer": "",
-          "name": "NewSprite",
-          "persistentUuid": "c1862e8a-177d-4f23-b1d7-a29a50b35170",
-          "width": 108,
-          "x": 800,
-          "y": 384,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        }
-      ],
-      "objects": [
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "WoodGround",
-          "texture": "assets\\Phases\\TiledSprites\\TiledWoodGround.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "WoodWall",
-          "texture": "assets\\Phases\\TiledSprites\\TiledWoodWall.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "WoodenWallCorner",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
             {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\WoodCornerWall.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 32,
-                            "y": 0
-                          },
-                          {
-                            "x": 32,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "LuzPlayer",
+                "=",
+                "Boneco.PointX(\"Center\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "LuzPlayer",
+                "=",
+                "Boneco.PointY(\"Center\")"
               ]
             }
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\StairsSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 104
-                          },
-                          {
-                            "x": 263,
-                            "y": 104
-                          },
-                          {
-                            "x": 263,
-                            "y": 311
-                          },
-                          {
-                            "x": 0,
-                            "y": 311
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
+              "type": {
+                "inverted": true,
+                "value": "Distance"
+              },
+              "parameters": [
+                "Spike",
+                "LuzPlayer",
+                "220",
+                ""
               ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite2",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\CobwebSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 3,
-                            "y": 2
-                          },
-                          {
-                            "x": 59,
-                            "y": 2
-                          },
-                          {
-                            "x": 59,
-                            "y": 56
-                          },
-                          {
-                            "x": 3,
-                            "y": 56
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite3",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\WoodCornerWall.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 32,
-                            "y": 0
-                          },
-                          {
-                            "x": 32,
-                            "y": 32
-                          },
-                          {
-                            "x": 0,
-                            "y": 32
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite4",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Phases\\Sprites\\SpikeSprite.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 3
-                          },
-                          {
-                            "x": 60,
-                            "y": 3
-                          },
-                          {
-                            "x": 60,
-                            "y": 60
-                          },
-                          {
-                            "x": 2,
-                            "y": 60
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "WoodGround"
-          },
-          {
-            "objectName": "WoodWall"
-          },
-          {
-            "objectName": "WoodenWallCorner"
-          },
-          {
-            "objectName": "NewSprite"
-          },
-          {
-            "objectName": "NewSprite2"
-          },
-          {
-            "objectName": "NewSprite3"
-          },
-          {
-            "objectName": "NewSprite4"
-          }
-        ]
-      },
-      "events": [],
-      "layers": [
-        {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
-          "camera3DFarPlaneDistance": 10000,
-          "camera3DFieldOfView": 45,
-          "camera3DNearPlaneDistance": 3,
-          "cameraType": "",
-          "followBaseLayerCamera": false,
-          "isLightingLayer": false,
-          "isLocked": false,
-          "name": "",
-          "renderingType": "",
-          "visibility": true,
-          "cameras": [
-            {
-              "defaultSize": true,
-              "defaultViewport": true,
-              "height": 0,
-              "viewportBottom": 1,
-              "viewportLeft": 0,
-              "viewportRight": 1,
-              "viewportTop": 0,
-              "width": 0
             }
           ],
-          "effects": [
+          "actions": [
             {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Light",
-              "doubleParameters": {
-                "elevation": 45,
-                "intensity": 1,
-                "rotation": 0
+              "type": {
+                "value": "Cache"
               },
-              "stringParameters": {
-                "groundColor": "64;64;64",
-                "skyColor": "255;255;255",
-                "top": "Y-"
-              },
-              "booleanParameters": {}
+              "parameters": [
+                "Spike"
+              ]
             }
           ]
-        }
-      ],
-      "behaviorsSharedData": [
-        {
-          "name": "Animation",
-          "type": "AnimatableCapability::AnimatableBehavior"
         },
         {
-          "name": "Effect",
-          "type": "EffectCapability::EffectBehavior"
-        },
-        {
-          "name": "Flippable",
-          "type": "FlippableCapability::FlippableBehavior"
-        },
-        {
-          "name": "Opacity",
-          "type": "OpacityCapability::OpacityBehavior"
-        },
-        {
-          "name": "Resizable",
-          "type": "ResizableCapability::ResizableBehavior"
-        },
-        {
-          "name": "Scale",
-          "type": "ScalableCapability::ScalableBehavior"
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Spike",
+                "LuzPlayer",
+                "220",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Spike",
+                ""
+              ]
+            }
+          ]
         }
       ]
     }
   ],
-  "externalEvents": [],
   "eventsFunctionsExtensions": [
     {
       "author": "Entropy",
