@@ -25,7 +25,7 @@
     "author": "",
     "windowWidth": 1920,
     "windowHeight": 1080,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\gabri\\Documents\\exportGame",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
@@ -3962,6 +3962,25 @@
                 "language_texts[languages.selected].Menu.CreditButton",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "fullscreen",
+                "True"
+              ]
             }
           ]
         }
@@ -6241,7 +6260,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.37971210019482454,
+        "zoomFactor": 0.4335774304702732,
         "windowMask": false
       },
       "objectsGroups": [],
