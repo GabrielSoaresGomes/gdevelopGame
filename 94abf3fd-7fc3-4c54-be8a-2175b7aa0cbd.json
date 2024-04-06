@@ -1157,6 +1157,24 @@
         "name": "assets\\Logo\\ios-icon-20.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Player/HeartEmpty.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Player\\HeartEmpty.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Player/HeartFull.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Player\\HeartFull.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1901,6 +1919,12 @@
           "name": "keys",
           "type": "number",
           "value": 1
+        },
+        {
+          "folded": true,
+          "name": "damage_taken",
+          "type": "number",
+          "value": 0
         }
       ],
       "effects": [
@@ -2521,7 +2545,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Hearth",
+      "name": "Heart",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -2539,7 +2563,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets\\Phases\\Sprites\\Player\\Hearth.png",
+                  "image": "assets\\Phases\\Sprites\\Player\\HeartFull.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -2555,20 +2579,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 7,
-                        "y": 9
+                        "x": 6,
+                        "y": 8
                       },
                       {
-                        "x": 57,
-                        "y": 9
+                        "x": 25,
+                        "y": 8
                       },
                       {
-                        "x": 57,
-                        "y": 51
+                        "x": 25,
+                        "y": 24
                       },
                       {
-                        "x": 7,
-                        "y": 51
+                        "x": 6,
+                        "y": 24
                       }
                     ]
                   ]
@@ -2867,6 +2891,67 @@
         "characterSize": 30,
         "color": "255;255;255"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EmptyHeart",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Hearth",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\Player\\HeartEmpty.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 16
+                      },
+                      {
+                        "x": 50,
+                        "y": 16
+                      },
+                      {
+                        "x": 50,
+                        "y": 48
+                      },
+                      {
+                        "x": 12,
+                        "y": 48
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2945,7 +3030,10 @@
                 "objectName": "KeyGUI"
               },
               {
-                "objectName": "Hearth"
+                "objectName": "Heart"
+              },
+              {
+                "objectName": "EmptyHeart"
               }
             ]
           },
@@ -8440,6 +8528,16 @@
             },
             {
               "type": {
+                "value": "ChangeSprite"
+              },
+              "parameters": [
+                "Heart",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
               },
               "parameters": [
@@ -8629,7 +8727,7 @@
                   },
                   "parameters": [
                     "",
-                    "Hearth",
+                    "Heart",
                     "Boneco.current_life_ui * 70",
                     "0",
                     "\"UI\""
@@ -9789,7 +9887,6 @@
           "comment": "Jogador pisa no espinho"
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -9822,17 +9919,61 @@
               },
               "parameters": [
                 "Boneco",
-                "life",
-                "-",
+                "damage_taken",
+                "=",
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Jogador toma dano"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "damage_taken",
+                ">=",
                 "1"
               ]
-            },
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "value": "Delete"
               },
               "parameters": [
-                "Hearth",
+                "Heart",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                "Boneco.damage_taken",
+                "1",
+                "",
                 ""
               ]
             },
@@ -9856,12 +9997,53 @@
                 "0.05",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "damage_taken",
+                "=",
+                "0"
+              ]
             }
           ],
           "events": [
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Health",
+                    "<",
+                    "0",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::SetHealth"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Health",
+                    "0",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Repeat",
-              "repeatExpression": "Boneco.life",
+              "repeatExpression": "Boneco.Health::Health()",
               "conditions": [],
               "actions": [
                 {
@@ -9870,10 +10052,50 @@
                   },
                   "parameters": [
                     "",
-                    "Hearth",
+                    "Heart",
                     "Boneco.current_life_ui * 70",
                     "0",
                     "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.Health::MaxHealth() - Boneco.Health::Health()",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EmptyHeart",
+                    "Boneco.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Heart",
+                    "=",
+                    "1"
                   ]
                 },
                 {
@@ -10085,6 +10307,28 @@
                 "Text",
                 "=",
                 "Boneco.keys"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "AllTime",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+              },
+              "parameters": [
+                "Heart",
+                "Animation"
               ]
             }
           ]
