@@ -657,262 +657,12 @@
         "userAdded": true
       },
       {
-        "file": "content_warning_1f581225.webm",
-        "kind": "video",
-        "metadata": "",
-        "name": "content_warning_1f581225.webm",
-        "userAdded": true
-      },
-      {
         "alwaysLoaded": false,
         "file": "assets/Logo/logo.webp",
         "kind": "image",
         "metadata": "",
         "name": "assets\\Logo\\logo.webp",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "desktop-icon-512.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "desktop-icon-512.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-192.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-192.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-144.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-144.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-96.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-96.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-72.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-72.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-48.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-48.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-icon-36.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-icon-36.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-windowSplashScreenAnimatedIcon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-windowSplashScreenAnimatedIcon.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-1024.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-1024.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-180.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-180.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-167.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-167.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-152.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-152.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-144.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-144.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-120.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-120.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-114.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-114.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-100.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-100.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-87.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-87.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-80.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-80.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-76.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-76.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-72.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-72.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-60.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-60.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-58.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-58.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-57.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-57.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-50.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-50.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-40.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-40.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-29.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-29.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "ios-icon-20.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "ios-icon-20.png",
-        "smoothed": true,
         "userAdded": true
       },
       {
@@ -1175,6 +925,60 @@
         "name": "assets\\Phases\\Sprites\\Player\\HeartFull.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/WoodCornerWall2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\Phases\\Sprites\\WoodCornerWall2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Enemy/Slime/SlimeFrame0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Enemy/Slime/SlimeFrame1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Enemy/Slime/SlimeFrame2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Enemy/Slime/SlimeFrame3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Phases/Sprites/Enemy/Slime/SlimeFrame4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame4.png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2625,7 +2429,12 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ],
       "animations": [
         {
           "name": "NewSprite",
@@ -2861,7 +2670,12 @@
       "underlined": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ],
       "string": "0",
       "font": "assets\\Geral\\Font\\Font.ttf",
       "textAlignment": "left",
@@ -2952,6 +2766,72 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "WoodenWallCorner2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "LightObstacleBehavior",
+          "type": "Lighting::LightObstacleBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Phases\\Sprites\\WoodCornerWall2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 0
+                      },
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 0,
+                        "y": 32
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -2977,6 +2857,9 @@
               {
                 "folderName": "Wood",
                 "children": [
+                  {
+                    "objectName": "WoodenWallCorner2"
+                  },
                   {
                     "objectName": "WoodWall"
                   },
@@ -6348,7 +6231,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.4335774304702732,
+        "zoomFactor": 0.7619362677198237,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7814,11 +7697,237 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Slime",
+          "persistentUuid": "6bd3c73e-ba42-4f5a-8c42-f96251fafc40",
+          "width": 0,
+          "x": 960,
+          "y": 480,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
-      "objects": [],
+      "objects": [
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Slime",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "pixil-frame0",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.1,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 92
+                          },
+                          {
+                            "x": 16,
+                            "y": 92
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 92
+                          },
+                          {
+                            "x": 16,
+                            "y": 92
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 92
+                          },
+                          {
+                            "x": 16,
+                            "y": 92
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 92
+                          },
+                          {
+                            "x": 16,
+                            "y": 92
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\Phases\\Sprites\\Enemy\\Slime\\SlimeFrame4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 32
+                          },
+                          {
+                            "x": 116,
+                            "y": 92
+                          },
+                          {
+                            "x": 16,
+                            "y": 92
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "objectsFolderStructure": {
-        "folderName": "__ROOT"
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "Slime"
+          }
+        ]
       },
       "events": [
         {
@@ -8000,23 +8109,23 @@
         "gridColor": 10401023,
         "gridAlpha": 0.22,
         "snap": true,
-        "zoomFactor": 0.835359182705995,
+        "zoomFactor": 1.1638682658311945,
         "windowMask": false
       },
       "objectsGroups": [],
       "variables": [],
       "instances": [
         {
-          "angle": 270,
+          "angle": 0,
           "customSize": true,
           "depth": 23,
           "height": 450,
           "layer": "",
           "name": "WoodGround",
           "persistentUuid": "ff715ec1-462b-4d74-9440-388ce177522d",
-          "width": 416,
-          "x": 815,
-          "y": 335,
+          "width": 449,
+          "x": 799,
+          "y": 319,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -8032,7 +8141,7 @@
           "persistentUuid": "6e326386-acc4-4b20-a866-d4dc6d8da216",
           "width": 32,
           "x": 1008,
-          "y": 112,
+          "y": 80,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -8042,13 +8151,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 416,
+          "height": 160,
           "layer": "",
           "name": "WoodWall",
           "persistentUuid": "49eecee7-9cbd-45bd-987e-09dbc611cb67",
           "width": 32,
           "x": 1248,
-          "y": 352,
+          "y": 608,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -8058,13 +8167,13 @@
           "angle": 180,
           "customSize": true,
           "depth": 1,
-          "height": 416,
+          "height": 448,
           "layer": "",
           "name": "WoodWall",
           "persistentUuid": "517adfc9-23bb-4576-97dd-249c44df01de",
           "width": 32,
           "x": 768,
-          "y": 352,
+          "y": 320,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -8074,20 +8183,20 @@
           "angle": 90,
           "customSize": true,
           "depth": 1,
-          "height": 448,
+          "height": 160,
           "layer": "",
           "name": "WoodWall",
           "persistentUuid": "525c88d0-46f3-43c9-ab66-b6596f5b02a3",
           "width": 32,
-          "x": 1008,
-          "y": 560,
+          "x": 1152,
+          "y": 704,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 180,
           "customSize": true,
           "depth": 1,
           "height": 32,
@@ -8095,8 +8204,8 @@
           "name": "WoodenWallCorner",
           "persistentUuid": "e5c57328-1c02-45fa-bc94-620cdd929a5f",
           "width": 32,
-          "x": 1248,
-          "y": 768,
+          "x": 672,
+          "y": 1440,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -8120,22 +8229,6 @@
         },
         {
           "angle": 180,
-          "customSize": true,
-          "depth": 1,
-          "height": 32,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "4cd98101-2c3e-4801-9d89-465f2cd1ca8c",
-          "width": 32,
-          "x": 768,
-          "y": 320,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 180,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -8143,22 +8236,7 @@
           "persistentUuid": "0f2a8b37-dcc9-4de0-9f69-e218bdfb1b86",
           "width": 0,
           "x": 768,
-          "y": 320,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 270,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "WoodenWallCorner",
-          "persistentUuid": "4a92f2ac-5e0b-4c0d-ba7c-214f828eb9a6",
-          "width": 0,
-          "x": 1248,
-          "y": 320,
+          "y": 288,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -8176,6 +8254,795 @@
           "x": 1008,
           "y": 528,
           "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "e672d291-b850-4473-b358-1262002a00e9",
+          "width": 32,
+          "x": 960,
+          "y": 800,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Door",
+          "persistentUuid": "eeb4d3db-d555-43ea-aac6-1832a031394c",
+          "width": 0,
+          "x": 993,
+          "y": 1439,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 160,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "4b72f624-ad25-4343-bedf-dfa13625a2a4",
+          "width": 32,
+          "x": 1248,
+          "y": 320,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "8c017d61-44d7-4489-8337-94d850428a37",
+          "width": 0,
+          "x": 1248,
+          "y": 288,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "b441dd9c-c1df-4a72-a4d5-3306514d779e",
+          "width": 0,
+          "x": 960,
+          "y": 768,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "037dd3f1-c5c2-435a-9553-2ac13a6cb0e0",
+          "width": 0,
+          "x": 1920,
+          "y": 480,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "890b6f7b-43a2-40bd-88fa-0b3b702e5740",
+          "width": 32,
+          "x": 1056,
+          "y": 800,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 160,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "9d58fefa-c5df-410f-8d4f-d14b47088372",
+          "width": 32,
+          "x": 864,
+          "y": 704,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Door",
+          "persistentUuid": "6d7685ef-bc00-412d-abd9-dce4aafd2404",
+          "width": 0,
+          "x": 1916,
+          "y": 514,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2,
+          "height": 64,
+          "layer": "",
+          "name": "WoodGround",
+          "persistentUuid": "9b0d0c61-c721-4d05-87a6-8c8107736da9",
+          "width": 704,
+          "x": 1248,
+          "y": 512,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "59b50684-132b-4d39-97e4-2bef67bea3d0",
+          "width": 32,
+          "x": 1584,
+          "y": 272,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "4674c7a3-4465-4883-8158-88d7ae9639fc",
+          "width": 32,
+          "x": 1584,
+          "y": 176,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "bfbb4da3-f676-4a6a-90b7-1aa78e954bc4",
+          "width": 0,
+          "x": 1056,
+          "y": 768,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Door",
+          "persistentUuid": "db6d7b2f-6ec8-4d98-8c1f-bede767b62f3",
+          "width": 0,
+          "x": 993,
+          "y": 743,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 11,
+          "height": 352,
+          "layer": "",
+          "name": "WoodGround",
+          "persistentUuid": "c6e73fec-9685-4fc5-80f2-328579dd0fa9",
+          "width": 640,
+          "x": 704,
+          "y": 1472,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "c67e6261-7895-4933-89e5-dd63ed826b8b",
+          "width": 32,
+          "x": 1248,
+          "y": 768,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "247f7df2-e22c-4141-91a6-ff87021bde1c",
+          "width": 32,
+          "x": 1344,
+          "y": 1440,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "ea610004-26d7-495e-96a9-30d9a8a3a3ec",
+          "width": 32,
+          "x": 1344,
+          "y": 1824,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "e9f63906-bb1d-4cf1-abc1-c7975111723f",
+          "width": 32,
+          "x": 672,
+          "y": 1824,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "0c557452-4f65-4aa4-b5a9-4d3f64d0de5f",
+          "width": 32,
+          "x": 1008,
+          "y": 1520,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "46bfb7ca-89f1-46b5-8482-be47095e19e7",
+          "width": 0,
+          "x": 960,
+          "y": 1440,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "0cc59a0d-8de8-41c3-b48d-2e1fdbe32a35",
+          "width": 0,
+          "x": 1056,
+          "y": 1440,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 256,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "10311bec-1145-428d-abad-ead22c302378",
+          "width": 32,
+          "x": 1200,
+          "y": 1328,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 256,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "ae425e07-4f8d-4d8c-beeb-0d59805ecf10",
+          "width": 32,
+          "x": 816,
+          "y": 1328,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 352,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "5afb8e22-768b-415b-8b84-12f853ef1707",
+          "width": 32,
+          "x": 672,
+          "y": 1472,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 352,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "d2fc0d0b-add8-4b1c-8600-1e8f53d532a8",
+          "width": 32,
+          "x": 1344,
+          "y": 1472,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 20,
+          "height": 640,
+          "layer": "",
+          "name": "WoodGround",
+          "persistentUuid": "2c9e042d-5ae5-40ac-8071-a7cb8cd0fc2e",
+          "width": 640,
+          "x": 1952,
+          "y": 224,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "59fc6bfa-afdd-4f9b-acdb-13724f1e3b11",
+          "width": 0,
+          "x": 1248,
+          "y": 576,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "7d50c84e-4c70-439d-a0fa-3f4834a32c18",
+          "width": 0,
+          "x": 1248,
+          "y": 480,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 256,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "fbfa0cc7-a864-4f22-ba3f-ecac4b183210",
+          "width": 32,
+          "x": 1920,
+          "y": 608,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "e9c9322d-ba7b-4feb-9531-8e475749180e",
+          "width": 32,
+          "x": 2256,
+          "y": 560,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner2",
+          "persistentUuid": "248ef408-6c1e-4b8e-95b2-4026faa0c10d",
+          "width": 0,
+          "x": 1920,
+          "y": 576,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "7e4cf313-716f-4617-b7be-0537ebffcd34",
+          "width": 0,
+          "x": 2592,
+          "y": 192,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "40d35587-f640-4717-ad98-1ce4933f725f",
+          "width": 0,
+          "x": 2592,
+          "y": 864,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": true,
+          "depth": 1,
+          "height": 256,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "2ce36418-a585-4277-b112-86b3c8dec03e",
+          "width": 32,
+          "x": 1920,
+          "y": 224,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "09ec2b33-a57a-43ae-8301-866204776294",
+          "width": 32,
+          "x": 2592,
+          "y": 224,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "c545a28a-09d2-4a0f-be82-1364a7dec9f4",
+          "width": 0,
+          "x": 1920,
+          "y": 864,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 180,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "WoodenWallCorner",
+          "persistentUuid": "33001d2c-a487-45ad-a146-5eacdc6b31ad",
+          "width": 0,
+          "x": 1920,
+          "y": 192,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 270,
+          "customSize": true,
+          "depth": 1,
+          "height": 640,
+          "layer": "",
+          "name": "WoodWall",
+          "persistentUuid": "e68c4fc8-95b9-4da5-a11a-3d2fa0044953",
+          "width": 32,
+          "x": 2256,
+          "y": -112,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "2ecbb409-38a7-48a7-8ef5-d7d4ff138bf6",
+          "width": 0,
+          "x": 2240,
+          "y": 480,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "112ae91b-090f-4c22-b93f-41d05bcb9a4a",
+          "width": 0,
+          "x": 2400,
+          "y": 320,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "c1721ec5-fc03-4714-b775-d244982c9f40",
+          "width": 0,
+          "x": 2080,
+          "y": 320,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "3c3788c9-2819-47f7-8e2a-27c74c87a58e",
+          "width": 0,
+          "x": 2080,
+          "y": 672,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "de6c0e0d-3e68-41f5-8bc1-2aa19d03f39e",
+          "width": 0,
+          "x": 2400,
+          "y": 672,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Cobweb",
+          "persistentUuid": "4ef1c597-5ba4-4270-9ee0-c40609d4dcb4",
+          "width": 0,
+          "x": 2112,
+          "y": 736,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Cobweb",
+          "persistentUuid": "ca4bc5dd-b9b6-4889-a47a-b00932818b3d",
+          "width": 0,
+          "x": 2496,
+          "y": 608,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 704,
+          "layer": "",
+          "name": "WoodGround",
+          "persistentUuid": "f8776881-c890-456e-8ec3-6021ec1a3dfa",
+          "width": 64,
+          "x": 992,
+          "y": 768,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Cobweb",
+          "persistentUuid": "593b89aa-44e3-4725-8aec-02340da42da6",
+          "width": 0,
+          "x": 2016,
+          "y": 288,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Cobweb",
+          "persistentUuid": "85dfdc81-a8d6-49a6-9086-664646264652",
+          "width": 0,
+          "x": 2464,
+          "y": 288,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Blood",
+          "persistentUuid": "99e482bd-c50a-4fc5-8a87-77995fffa8ad",
+          "width": 0,
+          "x": 2400,
+          "y": 672,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Door",
+          "persistentUuid": "7878c495-6611-4a05-936f-b3df6c69f0ab",
+          "width": 0,
+          "x": 1221,
+          "y": 514,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8273,9 +9140,9 @@
           ]
         },
         {
-          "ambientLightColorB": 200,
-          "ambientLightColorG": 200,
-          "ambientLightColorR": 200,
+          "ambientLightColorB": 42,
+          "ambientLightColorG": 42,
+          "ambientLightColorR": 44,
           "camera3DFarPlaneDistance": 10000,
           "camera3DFieldOfView": 45,
           "camera3DNearPlaneDistance": 3,
@@ -8462,6 +9329,16 @@
               "parameters": [
                 "Boneco",
                 "TreasureRoomDoor",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "Boneco",
+                "WoodenWallCorner2",
                 ""
               ]
             }
