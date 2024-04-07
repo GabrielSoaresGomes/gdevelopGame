@@ -4005,15 +4005,28 @@
           "type": "structure",
           "children": [
             {
+              "name": "down",
+              "persistentUuid": "9de57887-8611-4870-894f-00168f637aaf",
+              "type": "string",
+              "value": "down"
+            },
+            {
               "name": "left",
+              "persistentUuid": "4900a1ce-97f1-469d-8b7c-74044b09ddcc",
               "type": "string",
               "value": "left"
             },
             {
               "name": "right",
-              "persistentUuid": "fa0f44de-4e0e-406b-8a70-3f2303ea0001",
+              "persistentUuid": "ef771ab9-cd91-488b-952e-ef976a215b9e",
               "type": "string",
               "value": "right"
+            },
+            {
+              "name": "up",
+              "persistentUuid": "fa0f44de-4e0e-406b-8a70-3f2303ea0001",
+              "type": "string",
+              "value": "up"
             }
           ]
         },
@@ -12847,7 +12860,7 @@
               "parameters": [
                 "rooms.columns",
                 "=",
-                "32"
+                "34"
               ]
             },
             {
@@ -12857,7 +12870,7 @@
               "parameters": [
                 "rooms.rows",
                 "=",
-                "24"
+                "22"
               ]
             },
             {
@@ -12938,6 +12951,7 @@
               "actions": []
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Repeat",
               "repeatExpression": "rooms.columns",
               "conditions": [],
@@ -13097,26 +13111,6 @@
                                     "=",
                                     "rooms.room_creator_x_limiter * -1"
                                   ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter_bot_right"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter * -1"
-                                  ]
                                 }
                               ],
                               "actions": [
@@ -13196,26 +13190,6 @@
                                     "=",
                                     "rooms.room_creator_x_limiter * -1"
                                   ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter_bot_right"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter * -1"
-                                  ]
                                 }
                               ],
                               "actions": [
@@ -13275,26 +13249,6 @@
                                     "rooms.room_creator_x",
                                     "=",
                                     "rooms.room_creator_x_limiter_bot_right"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter_bot_right"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter * -1"
                                   ]
                                 }
                               ],
@@ -13375,15 +13329,55 @@
                                     "=",
                                     "rooms.room_creator_x_limiter_bot_right"
                                   ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "WoodGround",
+                                    "rooms.room_creator_x * rooms.tile_width",
+                                    "rooms.room_creator_y * rooms.tile_width",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Porta Cima"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "GlobalVariableChildExists"
+                                  },
+                                  "parameters": [
+                                    "rooms.door_directions",
+                                    "\"up\""
+                                  ]
                                 },
                                 {
                                   "type": {
                                     "value": "VarGlobal"
                                   },
                                   "parameters": [
-                                    "rooms.room_creator_y",
-                                    "!=",
-                                    "rooms.room_creator_y_limiter_bot_right"
+                                    "rooms.room_creator_x",
+                                    "=",
+                                    "0"
                                   ]
                                 },
                                 {
@@ -13392,8 +13386,226 @@
                                   },
                                   "parameters": [
                                     "rooms.room_creator_y",
-                                    "!=",
+                                    "=",
                                     "rooms.room_creator_y_limiter * -1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "WoodGround",
+                                    "rooms.room_creator_x * rooms.tile_width",
+                                    "rooms.room_creator_y * rooms.tile_width",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "Door",
+                                    "Door",
+                                    "rooms.room_creator_x * rooms.tile_width - rooms.tile_width",
+                                    "rooms.room_creator_y * rooms.tile_width - 2",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "Door",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                                  },
+                                  "parameters": [
+                                    "Door",
+                                    "Animation"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "GlobalVariableChildExists"
+                                  },
+                                  "parameters": [
+                                    "rooms.door_directions",
+                                    "\"up\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "rooms.room_creator_x",
+                                    "=",
+                                    "-1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "rooms.room_creator_y",
+                                    "=",
+                                    "rooms.room_creator_y_limiter * -1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "WoodGround",
+                                    "rooms.room_creator_x * rooms.tile_width",
+                                    "rooms.room_creator_y * rooms.tile_width",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "Porta Baixo"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "GlobalVariableChildExists"
+                                  },
+                                  "parameters": [
+                                    "rooms.door_directions",
+                                    "\"down\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "rooms.room_creator_x",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "rooms.room_creator_y",
+                                    "=",
+                                    "rooms.room_creator_y_limiter_bot_right"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "WoodGround",
+                                    "rooms.room_creator_x * rooms.tile_width",
+                                    "rooms.room_creator_y * rooms.tile_width",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "Door",
+                                    "Door",
+                                    "rooms.room_creator_x * rooms.tile_width - rooms.tile_width",
+                                    "rooms.room_creator_y * rooms.tile_width - rooms.tile_width + 6",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "SetAngle"
+                                  },
+                                  "parameters": [
+                                    "Door",
+                                    "=",
+                                    "0"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                                  },
+                                  "parameters": [
+                                    "Door",
+                                    "Animation"
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "GlobalVariableChildExists"
+                                  },
+                                  "parameters": [
+                                    "rooms.door_directions",
+                                    "\"down\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "rooms.room_creator_x",
+                                    "=",
+                                    "-1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "rooms.room_creator_y",
+                                    "=",
+                                    "rooms.room_creator_y_limiter_bot_right"
                                   ]
                                 }
                               ],
@@ -13420,6 +13632,7 @@
                           "colorG": 176,
                           "colorR": 74,
                           "creationTime": 0,
+                          "folded": true,
                           "name": "Paredes",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -13572,6 +13785,7 @@
                               "comment": "Parede Direita"
                             },
                             {
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -13700,56 +13914,119 @@
                               "conditions": [
                                 {
                                   "type": {
-                                    "value": "VarGlobal"
+                                    "value": "BuiltinCommonInstructions::Or"
                                   },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "=",
-                                    "rooms.room_creator_y_limiter_bot_right"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_x",
-                                    "!=",
-                                    "rooms.room_creator_x_limiter * -1"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_x",
-                                    "!=",
-                                    "rooms.room_creator_x_limiter_bot_right"
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "GlobalVariableChildExists"
+                                      },
+                                      "parameters": [
+                                        "rooms.door_directions",
+                                        "\"down\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::And"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "GlobalVariableChildExists"
+                                          },
+                                          "parameters": [
+                                            "rooms.door_directions",
+                                            "\"down\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "rooms.room_creator_x",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "rooms.room_creator_x",
+                                            "!=",
+                                            "-1"
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   ]
                                 }
                               ],
-                              "actions": [
+                              "actions": [],
+                              "events": [
                                 {
-                                  "type": {
-                                    "value": "Create"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "WoodWall",
-                                    "rooms.room_creator_x * rooms.tile_width",
-                                    "rooms.room_creator_y * rooms.tile_width",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetAngle"
-                                  },
-                                  "parameters": [
-                                    "WoodWall",
-                                    "=",
-                                    "90"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "rooms.room_creator_y",
+                                        "=",
+                                        "rooms.room_creator_y_limiter_bot_right"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "rooms.room_creator_x",
+                                        "!=",
+                                        "rooms.room_creator_x_limiter * -1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "rooms.room_creator_x",
+                                        "!=",
+                                        "rooms.room_creator_x_limiter_bot_right"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "WoodWall",
+                                        "rooms.room_creator_x * rooms.tile_width",
+                                        "rooms.room_creator_y * rooms.tile_width",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetAngle"
+                                      },
+                                      "parameters": [
+                                        "WoodWall",
+                                        "=",
+                                        "90"
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
@@ -13771,56 +14048,119 @@
                               "conditions": [
                                 {
                                   "type": {
-                                    "value": "VarGlobal"
+                                    "value": "BuiltinCommonInstructions::Or"
                                   },
-                                  "parameters": [
-                                    "rooms.room_creator_y",
-                                    "=",
-                                    "rooms.room_creator_y_limiter * -1"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_x",
-                                    "!=",
-                                    "rooms.room_creator_x_limiter * -1"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarGlobal"
-                                  },
-                                  "parameters": [
-                                    "rooms.room_creator_x",
-                                    "!=",
-                                    "rooms.room_creator_x_limiter_bot_right"
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "GlobalVariableChildExists"
+                                      },
+                                      "parameters": [
+                                        "rooms.door_directions",
+                                        "\"up\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::And"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "GlobalVariableChildExists"
+                                          },
+                                          "parameters": [
+                                            "rooms.door_directions",
+                                            "\"up\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "rooms.room_creator_x",
+                                            "!=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarGlobal"
+                                          },
+                                          "parameters": [
+                                            "rooms.room_creator_x",
+                                            "!=",
+                                            "-1"
+                                          ]
+                                        }
+                                      ]
+                                    }
                                   ]
                                 }
                               ],
-                              "actions": [
+                              "actions": [],
+                              "events": [
                                 {
-                                  "type": {
-                                    "value": "Create"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "WoodWall",
-                                    "rooms.room_creator_x * rooms.tile_width",
-                                    "rooms.room_creator_y * rooms.tile_width",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetAngle"
-                                  },
-                                  "parameters": [
-                                    "WoodWall",
-                                    "=",
-                                    "270"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "rooms.room_creator_y",
+                                        "=",
+                                        "rooms.room_creator_y_limiter * -1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "rooms.room_creator_x",
+                                        "!=",
+                                        "rooms.room_creator_x_limiter * -1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "VarGlobal"
+                                      },
+                                      "parameters": [
+                                        "rooms.room_creator_x",
+                                        "!=",
+                                        "rooms.room_creator_x_limiter_bot_right"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "WoodWall",
+                                        "rooms.room_creator_x * rooms.tile_width",
+                                        "rooms.room_creator_y * rooms.tile_width",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetAngle"
+                                      },
+                                      "parameters": [
+                                        "WoodWall",
+                                        "=",
+                                        "270"
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
