@@ -1917,10 +1917,16 @@
             },
             {
               "folded": true,
+              "name": "cutscene",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "folded": true,
               "name": "default",
               "persistentUuid": "f636c96c-4644-4696-8869-0f552057d489",
               "type": "number",
-              "value": 20
+              "value": 200
             },
             {
               "folded": true,
@@ -11853,57 +11859,6 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "z"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Create"
-                      },
-                      "parameters": [
-                        "",
-                        "CutSceneText",
-                        "Boneco.PointX(\"Center\") - 64",
-                        "Boneco.PointY(\"Center\") - 64",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Wait"
-                      },
-                      "parameters": [
-                        "3"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "CutSceneText",
-                        ""
-                      ]
-                    }
-                  ]
                 }
               ]
             }
@@ -12576,6 +12531,15 @@
                             "",
                             "",
                             ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "GlobalVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "is_in_cutscene",
+                            "False"
                           ]
                         }
                       ]
@@ -15315,6 +15279,12 @@
               "parameters": [
                 "Boneco"
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -15349,6 +15319,17 @@
               "parameters": [
                 "is_in_cutscene",
                 "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "TopDownMovementBehavior::MaxSpeed"
+              },
+              "parameters": [
+                "Boneco",
+                "TopDownMovement",
+                "=",
+                "Boneco.mov_speeds.cutscene"
               ]
             }
           ]
@@ -15601,6 +15582,17 @@
                     "Boneco",
                     "RemapForTopdown",
                     "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "TopDownMovement",
+                    "=",
+                    "Boneco.mov_speeds.default"
                   ]
                 }
               ]
