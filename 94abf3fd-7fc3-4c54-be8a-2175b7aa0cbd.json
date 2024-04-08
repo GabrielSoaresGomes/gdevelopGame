@@ -1973,9 +1973,9 @@
           "IsCalledManually": false
         },
         {
-          "maxSpeed": 200,
           "name": "TopDownMovement",
           "type": "TopDownMovementBehavior::TopDownMovementBehavior",
+          "maxSpeed": 200,
           "acceleration": 900,
           "ignoreDefaultControls": false,
           "allowDiagonals": true,
@@ -4853,6 +4853,10 @@
           "type": "AnimatableCapability::AnimatableBehavior"
         },
         {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -6060,6 +6064,10 @@
           "type": "AnimatableCapability::AnimatableBehavior"
         },
         {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping"
+        },
+        {
           "name": "ButtonFSM",
           "type": "ButtonStates::ButtonFSM"
         },
@@ -7021,6 +7029,10 @@
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping"
         },
         {
           "name": "Effect",
@@ -8955,6 +8967,10 @@
           "type": "AnimatableCapability::AnimatableBehavior"
         },
         {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping"
+        },
+        {
           "name": "Effect",
           "type": "EffectCapability::EffectBehavior"
         },
@@ -10084,6 +10100,10 @@
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "BitmapText_AutoTyping",
+          "type": "AutoTyping::BitmapText_AutoTyping"
         },
         {
           "name": "Effect",
