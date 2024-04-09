@@ -1132,6 +1132,26 @@
         "name": "NewSprite3",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/Phases/Sounds/door_open.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Phases\\Sounds\\door_open.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Phases/Musics/music_01.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Phases\\Musics\\music_01.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1938,6 +1958,12 @@
           ]
         },
         {
+          "name": "is_running",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "folded": true,
           "name": "dash",
           "type": "structure",
           "children": [
@@ -3871,6 +3897,600 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",
+      "name": "MenuBackButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 4,
+        "BottomPadding": 6,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "assets\\Geral\\Sprites\\Button\\ButtonHover.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "assets\\Geral\\Sprites\\Button\\ButtonIdle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "VOLTAR",
+          "font": "assets\\Geral\\Font\\Font.ttf",
+          "textAlignment": "center",
+          "characterSize": 45,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "VOLTAR",
+            "font": "assets\\Geral\\Font\\Font.ttf",
+            "textAlignment": "center",
+            "characterSize": 45,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "assets\\Geral\\Sprites\\Button\\ButtonPressed.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "84dcf81d35efee74a6cab51b4103acc5443e7f39fd7366e2ac58641e60323b4a",
+      "name": "VolumeSlider",
+      "type": "PanelSpriteSlider::PanelSpriteSlider",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "BarTopPadding": 3,
+        "BarLeftPadding": 3,
+        "BarRightPadding": 3,
+        "BarBottomPadding": 4,
+        "LabelMargin": 4
+      },
+      "childrenContent": {
+        "Background": {
+          "bottomMargin": 4,
+          "height": 18,
+          "leftMargin": 2,
+          "rightMargin": 2,
+          "texture": "assets\\Config\\Sprites\\Slider\\SliderBorder.png",
+          "tiled": false,
+          "topMargin": 4,
+          "width": 215
+        },
+        "FillBar": {
+          "bottomMargin": 1,
+          "height": 11,
+          "leftMargin": 1,
+          "rightMargin": 1,
+          "texture": "assets\\Config\\Sprites\\Slider\\SliderFillBar.png",
+          "tiled": false,
+          "topMargin": 1,
+          "width": 11
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "It displays the value when it changes.",
+          "font": "assets\\Geral\\Font\\Font.ttf",
+          "textAlignment": "",
+          "characterSize": 16,
+          "color": {
+            "b": 221,
+            "g": 221,
+            "r": 221
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "It displays the value when it changes.",
+            "font": "assets\\Geral\\Font\\Font.ttf",
+            "textAlignment": "",
+            "characterSize": 16,
+            "color": "221;221;221"
+          }
+        },
+        "Thumb": {
+          "bottomMargin": 3,
+          "height": 21,
+          "leftMargin": 3,
+          "rightMargin": 3,
+          "texture": "assets\\Config\\Sprites\\Slider\\SliderThumb.png",
+          "tiled": false,
+          "topMargin": 3,
+          "width": 21
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "VolumeText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "VOLUME",
+      "font": "assets\\Geral\\Font\\Font.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "VOLUME",
+        "font": "assets\\Geral\\Font\\Font.ttf",
+        "textAlignment": "left",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "767e5ec40fb6a67bbc052b750c44150e468e00b50242c3f90ce1be1d0baf3257",
+      "name": "FullScreenTogle",
+      "type": "SpriteToggleSwitch::SpriteToggleSwitch",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "IsChecked": false
+      },
+      "childrenContent": {
+        "State": {
+          "adaptCollisionMaskAutomatically": false,
+          "updateIfNotVisible": false,
+          "animations": [
+            {
+              "name": "Unchecked",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Config\\Sprites\\Toggle\\ToggleUnchecked.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Checked",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "assets\\Config\\Sprites\\Toggle\\ToggleChecked.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "FullScreenText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "TELA CHEIA",
+      "font": "assets\\Geral\\Font\\Font.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "TELA CHEIA",
+        "font": "assets\\Geral\\Font\\Font.ttf",
+        "textAlignment": "left",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "LanguageText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "IDIOMA",
+      "font": "assets\\Geral\\Font\\Font.ttf",
+      "textAlignment": "left",
+      "characterSize": 30,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "IDIOMA",
+        "font": "assets\\Geral\\Font\\Font.ttf",
+        "textAlignment": "left",
+        "characterSize": 30,
+        "color": "255;255;255"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Langauges",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        }
+      ],
+      "animations": [
+        {
+          "name": "Languages",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.01,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Config\\Sprites\\Languages\\BrazilLanguage.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 28,
+                        "y": 0
+                      },
+                      {
+                        "x": 28,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Config\\Sprites\\Languages\\EUALanguage.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 28,
+                        "y": 0
+                      },
+                      {
+                        "x": 28,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Config\\Sprites\\Languages\\SpainLanguage.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 28,
+                        "y": 0
+                      },
+                      {
+                        "x": 28,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",
+      "name": "ExitGameButton",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 4,
+        "BottomPadding": 6,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "assets\\Geral\\Sprites\\Button\\ButtonHover.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "assets\\Geral\\Sprites\\Button\\ButtonIdle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "SAIR DO JOGO",
+          "font": "assets\\Geral\\Font\\Font.ttf",
+          "textAlignment": "center",
+          "characterSize": 45,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "SAIR DO JOGO",
+            "font": "assets\\Geral\\Font\\Font.ttf",
+            "textAlignment": "center",
+            "characterSize": 45,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "assets\\Geral\\Sprites\\Button\\ButtonPressed.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -3878,6 +4498,35 @@
     "children": [
       {
         "objectName": "apenas"
+      },
+      {
+        "folderName": "Menu",
+        "children": [
+          {
+            "objectName": "Langauges"
+          },
+          {
+            "objectName": "LanguageText"
+          },
+          {
+            "objectName": "FullScreenText"
+          },
+          {
+            "objectName": "FullScreenTogle"
+          },
+          {
+            "objectName": "VolumeText"
+          },
+          {
+            "objectName": "VolumeSlider"
+          },
+          {
+            "objectName": "MenuBackButton"
+          },
+          {
+            "objectName": "ExitGameButton"
+          }
+        ]
       },
       {
         "folderName": "CutScene",
@@ -4082,12 +4731,6 @@
   "variables": [
     {
       "folded": true,
-      "name": "volume",
-      "type": "number",
-      "value": 100
-    },
-    {
-      "folded": true,
       "name": "fullscreen",
       "type": "boolean",
       "value": false
@@ -4131,7 +4774,6 @@
       ]
     },
     {
-      "folded": true,
       "name": "language_texts",
       "type": "structure",
       "children": [
@@ -4214,11 +4856,23 @@
                   "value": "VOLUME"
                 }
               ]
+            },
+            {
+              "folded": true,
+              "name": "Phases",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "ExitGameButton",
+                  "type": "string",
+                  "value": "Sair do Jogo"
+                }
+              ]
             }
           ]
         },
         {
-          "folded": true,
           "name": "1",
           "type": "structure",
           "children": [
@@ -4296,11 +4950,23 @@
                   "value": "VOLUME"
                 }
               ]
+            },
+            {
+              "name": "Phases",
+              "persistentUuid": "400131d3-2d56-40c3-a59e-455eb5bd3935",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "ExitGameButton",
+                  "type": "string",
+                  "value": "Exit Game"
+                }
+              ]
             }
           ]
         },
         {
-          "folded": true,
           "name": "2",
           "persistentUuid": "d57e5bfb-e71a-44cf-8a18-2e3bdf1f9b1c",
           "type": "structure",
@@ -4377,6 +5043,19 @@
                   "name": "VolumeText",
                   "type": "string",
                   "value": "VOLUMEN"
+                }
+              ]
+            },
+            {
+              "name": "Phases",
+              "persistentUuid": "791a60ce-a223-4890-bbea-75cb386eff59",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "ExitGameButton",
+                  "type": "string",
+                  "value": "Abandonar el juego"
                 }
               ]
             }
@@ -4491,6 +5170,29 @@
       "name": "have_cutscene",
       "type": "boolean",
       "value": true
+    },
+    {
+      "name": "config",
+      "type": "structure",
+      "children": [
+        {
+          "name": "volume",
+          "type": "string",
+          "value": "100"
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "game_started",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "game_paused",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [
@@ -5127,7 +5829,7 @@
                 "assets\\Menu\\Music\\MenuMusic.mp3",
                 "0",
                 "yes",
-                "volume",
+                "config.volume",
                 "1"
               ]
             }
@@ -5341,7 +6043,7 @@
         "gridColor": 0,
         "gridAlpha": 0.09,
         "snap": true,
-        "zoomFactor": 0.5995738389111098,
+        "zoomFactor": 0.30887412163426625,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -5353,7 +6055,7 @@
           "depth": 32,
           "height": 64,
           "layer": "",
-          "name": "BackButton",
+          "name": "MenuBackButton",
           "persistentUuid": "cf9c9966-6e90-4e52-b603-371cda6b63a0",
           "width": 384,
           "x": 768,
@@ -5457,544 +6159,9 @@
           "initialVariables": []
         }
       ],
-      "objects": [
-        {
-          "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",
-          "name": "BackButton",
-          "type": "PanelSpriteButton::PanelSpriteButton",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "LeftPadding": 0,
-            "RightPadding": 0,
-            "PressedLabelOffsetY": 4,
-            "BottomPadding": 6,
-            "TopPadding": 0,
-            "HoveredFadeOutDuration": 0
-          },
-          "childrenContent": {
-            "Hovered": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "assets\\Geral\\Sprites\\Button\\ButtonHover.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            },
-            "Idle": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "assets\\Geral\\Sprites\\Button\\ButtonIdle.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "VOLTAR",
-              "font": "assets\\Geral\\Font\\Font.ttf",
-              "textAlignment": "center",
-              "characterSize": 45,
-              "color": {
-                "b": 255,
-                "g": 255,
-                "r": 255
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "VOLTAR",
-                "font": "assets\\Geral\\Font\\Font.ttf",
-                "textAlignment": "center",
-                "characterSize": 45,
-                "color": "255;255;255"
-              }
-            },
-            "Pressed": {
-              "bottomMargin": 10,
-              "height": 64,
-              "leftMargin": 6,
-              "rightMargin": 6,
-              "texture": "assets\\Geral\\Sprites\\Button\\ButtonPressed.png",
-              "tiled": false,
-              "topMargin": 10,
-              "width": 192
-            }
-          }
-        },
-        {
-          "assetStoreId": "84dcf81d35efee74a6cab51b4103acc5443e7f39fd7366e2ac58641e60323b4a",
-          "name": "VolumeSlider",
-          "type": "PanelSpriteSlider::PanelSpriteSlider",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "BarTopPadding": 3,
-            "BarLeftPadding": 3,
-            "BarRightPadding": 3,
-            "BarBottomPadding": 4,
-            "LabelMargin": 4
-          },
-          "childrenContent": {
-            "Background": {
-              "bottomMargin": 4,
-              "height": 18,
-              "leftMargin": 2,
-              "rightMargin": 2,
-              "texture": "assets\\Config\\Sprites\\Slider\\SliderBorder.png",
-              "tiled": false,
-              "topMargin": 4,
-              "width": 215
-            },
-            "FillBar": {
-              "bottomMargin": 1,
-              "height": 11,
-              "leftMargin": 1,
-              "rightMargin": 1,
-              "texture": "assets\\Config\\Sprites\\Slider\\SliderFillBar.png",
-              "tiled": false,
-              "topMargin": 1,
-              "width": 11
-            },
-            "Label": {
-              "bold": false,
-              "italic": false,
-              "smoothed": true,
-              "underlined": false,
-              "string": "It displays the value when it changes.",
-              "font": "assets\\Geral\\Font\\Font.ttf",
-              "textAlignment": "",
-              "characterSize": 16,
-              "color": {
-                "b": 221,
-                "g": 221,
-                "r": 221
-              },
-              "content": {
-                "bold": false,
-                "isOutlineEnabled": false,
-                "isShadowEnabled": false,
-                "italic": false,
-                "outlineColor": "255;255;255",
-                "outlineThickness": 2,
-                "shadowAngle": 90,
-                "shadowBlurRadius": 2,
-                "shadowColor": "0;0;0",
-                "shadowDistance": 4,
-                "shadowOpacity": 127,
-                "smoothed": true,
-                "underlined": false,
-                "text": "It displays the value when it changes.",
-                "font": "assets\\Geral\\Font\\Font.ttf",
-                "textAlignment": "",
-                "characterSize": 16,
-                "color": "221;221;221"
-              }
-            },
-            "Thumb": {
-              "bottomMargin": 3,
-              "height": 21,
-              "leftMargin": 3,
-              "rightMargin": 3,
-              "texture": "assets\\Config\\Sprites\\Slider\\SliderThumb.png",
-              "tiled": false,
-              "topMargin": 3,
-              "width": 21
-            }
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "VolumeText",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "VOLUME",
-          "font": "assets\\Geral\\Font\\Font.ttf",
-          "textAlignment": "center",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "VOLUME",
-            "font": "assets\\Geral\\Font\\Font.ttf",
-            "textAlignment": "center",
-            "characterSize": 30,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "767e5ec40fb6a67bbc052b750c44150e468e00b50242c3f90ce1be1d0baf3257",
-          "name": "FullScreenTogle",
-          "type": "SpriteToggleSwitch::SpriteToggleSwitch",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "IsChecked": false
-          },
-          "childrenContent": {
-            "State": {
-              "adaptCollisionMaskAutomatically": false,
-              "updateIfNotVisible": false,
-              "animations": [
-                {
-                  "name": "Unchecked",
-                  "useMultipleDirections": false,
-                  "directions": [
-                    {
-                      "looping": false,
-                      "metadata": "{\"pskl\":{}}",
-                      "timeBetweenFrames": 0.08,
-                      "sprites": [
-                        {
-                          "hasCustomCollisionMask": false,
-                          "image": "assets\\Config\\Sprites\\Toggle\\ToggleUnchecked.png",
-                          "points": [],
-                          "originPoint": {
-                            "name": "origine",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "centerPoint": {
-                            "automatic": true,
-                            "name": "centre",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "customCollisionMask": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "name": "Checked",
-                  "useMultipleDirections": false,
-                  "directions": [
-                    {
-                      "looping": false,
-                      "metadata": "{\"pskl\":{}}",
-                      "timeBetweenFrames": 0.08,
-                      "sprites": [
-                        {
-                          "hasCustomCollisionMask": false,
-                          "image": "assets\\Config\\Sprites\\Toggle\\ToggleChecked.png",
-                          "points": [],
-                          "originPoint": {
-                            "name": "origine",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "centerPoint": {
-                            "automatic": true,
-                            "name": "centre",
-                            "x": 0,
-                            "y": 0
-                          },
-                          "customCollisionMask": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "FullScreenText",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "TELA CHEIA",
-          "font": "assets\\Geral\\Font\\Font.ttf",
-          "textAlignment": "left",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "TELA CHEIA",
-            "font": "assets\\Geral\\Font\\Font.ttf",
-            "textAlignment": "left",
-            "characterSize": 30,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "LanguageText",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "IDIOMA",
-          "font": "assets\\Geral\\Font\\Font.ttf",
-          "textAlignment": "left",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "IDIOMA",
-            "font": "assets\\Geral\\Font\\Font.ttf",
-            "textAlignment": "left",
-            "characterSize": 30,
-            "color": "255;255;255"
-          }
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Langauges",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "ButtonFSM",
-              "type": "ButtonStates::ButtonFSM",
-              "ShouldCheckHovering": true,
-              "State": "Idle",
-              "TouchId": 0,
-              "TouchIsInside": false,
-              "MouseIsInside": false,
-              "Index": 2.0247e-320
-            }
-          ],
-          "animations": [
-            {
-              "name": "Languages",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.01,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Config\\Sprites\\Languages\\BrazilLanguage.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
-                            "y": 18
-                          },
-                          {
-                            "x": 0,
-                            "y": 18
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Config\\Sprites\\Languages\\EUALanguage.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
-                            "y": 18
-                          },
-                          {
-                            "x": 0,
-                            "y": 18
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\Config\\Sprites\\Languages\\SpainLanguage.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
-                            "y": 0
-                          },
-                          {
-                            "x": 28,
-                            "y": 18
-                          },
-                          {
-                            "x": 0,
-                            "y": 18
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ],
+      "objects": [],
       "objectsFolderStructure": {
-        "folderName": "__ROOT",
-        "children": [
-          {
-            "objectName": "BackButton"
-          },
-          {
-            "objectName": "VolumeSlider"
-          },
-          {
-            "objectName": "VolumeText"
-          },
-          {
-            "objectName": "FullScreenTogle"
-          },
-          {
-            "objectName": "FullScreenText"
-          },
-          {
-            "objectName": "LanguageText"
-          },
-          {
-            "objectName": "Langauges"
-          }
-        ]
+        "folderName": "__ROOT"
       },
       "events": [
         {
@@ -6005,7 +6172,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "BackButton",
+                "MenuBackButton",
                 ""
               ]
             }
@@ -6053,7 +6220,7 @@
                 "value": "ModVarGlobal"
               },
               "parameters": [
-                "volume",
+                "config.volume",
                 "=",
                 "VolumeSlider.Value()"
               ]
@@ -6080,7 +6247,7 @@
               "parameters": [
                 "VolumeSlider",
                 "=",
-                "volume",
+                "config.volume",
                 ""
               ]
             }
@@ -6378,7 +6545,7 @@
                 "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
               },
               "parameters": [
-                "BackButton",
+                "MenuBackButton",
                 "language_texts[languages.selected].Options.BackButton",
                 ""
               ]
@@ -7519,7 +7686,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 1.061571430522094,
+        "zoomFactor": 0.46331118245144015,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -9019,22 +9186,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 128,
-          "layer": "",
-          "name": "SlimeMov",
-          "persistentUuid": "27eaa36e-394e-4435-aaa4-249136b57ad0",
-          "width": 128,
-          "x": 2080,
-          "y": 352,
-          "zOrder": 51,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -9255,6 +9406,118 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 36,
+          "layer": "Menu_UI",
+          "name": "VolumeSlider",
+          "persistentUuid": "f3fe9b8a-decf-43fa-9aad-86e54209510d",
+          "width": 426,
+          "x": 847,
+          "y": 481,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 62,
+          "layer": "Menu_UI",
+          "name": "VolumeText",
+          "persistentUuid": "3c9733c0-8f44-4f6d-9958-ca6e2ca655c4",
+          "width": 166,
+          "x": 576,
+          "y": 480,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 62,
+          "layer": "Menu_UI",
+          "name": "FullScreenText",
+          "persistentUuid": "d9d506a7-da4e-4adf-bb66-93f765aaaf92",
+          "width": 267,
+          "x": 576,
+          "y": 352,
+          "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 64,
+          "layer": "Menu_UI",
+          "name": "FullScreenTogle",
+          "persistentUuid": "7b23111c-1483-4a40-b78b-499d7b48e4b5",
+          "width": 54,
+          "x": 1226,
+          "y": 352,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 62,
+          "layer": "Menu_UI",
+          "name": "LanguageText",
+          "persistentUuid": "9af09a13-ec2b-4fc1-a7df-b305aae50b88",
+          "width": 160,
+          "x": 576,
+          "y": 224,
+          "zOrder": 6,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 86,
+          "layer": "Menu_UI",
+          "name": "Langauges",
+          "persistentUuid": "30abc708-d9e6-431d-a2fc-3c119400579d",
+          "width": 108,
+          "x": 1172,
+          "y": 224,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 48,
+          "height": 64,
+          "layer": "Menu_UI",
+          "name": "ExitGameButton",
+          "persistentUuid": "e42eb468-36a0-4bdf-b924-3d7b30453706",
+          "width": 384,
+          "x": 768,
+          "y": 832,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -9365,7 +9628,7 @@
           "isLocked": false,
           "name": "",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [
             {
               "defaultSize": true,
@@ -9393,6 +9656,15 @@
                 "top": "Y-"
               },
               "booleanParameters": {}
+            },
+            {
+              "effectType": "BlackAndWhite",
+              "name": "Pause_Effect",
+              "doubleParameters": {
+                "opacity": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
             }
           ]
         },
@@ -9412,6 +9684,39 @@
           "visibility": true,
           "cameras": [],
           "effects": []
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Menu_UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         },
         {
           "ambientLightColorB": 200,
@@ -9455,6 +9760,10 @@
         {
           "name": "BitmapText_AutoTyping",
           "type": "AutoTyping::BitmapText_AutoTyping"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
         },
         {
           "name": "Effect",
@@ -10893,6 +11202,13 @@
           "include": {
             "includeConfig": 0
           },
+          "target": "ChangeLanguageInGame"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
           "target": "Animation"
         },
         {
@@ -10957,56 +11273,13 @@
             "includeConfig": 0
           },
           "target": "BlockMovimentCollision"
-        }
-      ]
-    },
-    {
-      "associatedLayout": "Fase#1",
-      "lastChangeTimeStamp": 0,
-      "name": "BlockMovimentCollision",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "EntityBlocked",
-                "EntityBlocker",
-                ""
-              ]
-            }
-          ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Door",
-                "is_open",
-                "False"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SeparateFromObjects"
-              },
-              "parameters": [
-                "EntityBlocked",
-                "Door",
-                ""
-              ]
-            }
-          ]
+          "type": "BuiltinCommonInstructions::Link",
+          "include": {
+            "includeConfig": 0
+          },
+          "target": "InGameMenu"
         }
       ]
     },
@@ -11016,6 +11289,7 @@
       "name": "StartScene",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11028,6 +11302,25 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetFullScreen"
+              },
+              "parameters": [
+                "",
+                "yes",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AdvancedWindow::Maximize"
+              },
+              "parameters": [
+                "yes",
+                ""
+              ]
+            },
             {
               "type": {
                 "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
@@ -11144,6 +11437,17 @@
                 "FireBullet",
                 "=",
                 "Boneco.shots.shots_fired",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EnableLayerEffect"
+              },
+              "parameters": [
+                "",
+                "",
+                "\"Pause_Effect\"",
                 ""
               ]
             }
@@ -11374,6 +11678,270 @@
                     "2"
                   ]
                 }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "game_started",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets\\Phases\\Musics\\music_01.mp3",
+                "0",
+                "yes",
+                "config.volume",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Menu em Jogo",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "Langauges",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Langauges",
+                    "=",
+                    "languages.selected"
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::SetValue"
+                  },
+                  "parameters": [
+                    "VolumeSlider",
+                    "=",
+                    "config.volume",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "fullscreen",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+                      },
+                      "parameters": [
+                        "FullScreenTogle",
+                        "yes",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "GlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "fullscreen",
+                        "False"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+                      },
+                      "parameters": [
+                        "FullScreenTogle",
+                        "no",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "ChangeLanguageInGame",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "DepartScene"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Langauges",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "ExitGameButton",
+                "Text",
+                "=",
+                "language_texts[languages.selected].Phases.ExitGameButton"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "BlockMovimentCollision",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EntityBlocked",
+                "EntityBlocker",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Door",
+                "is_open",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "EntityBlocked",
+                "Door",
+                ""
               ]
             }
           ]
@@ -11892,6 +12460,53 @@
                         "=",
                         "Boneco.mov_speeds.running"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Boneco",
+                        "is_running",
+                        "True"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "LShift"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TopDownMovementBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "Boneco",
+                        "TopDownMovement",
+                        "=",
+                        "Boneco.mov_speeds.running"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Boneco",
+                        "is_running",
+                        "False"
+                      ]
                     }
                   ]
                 }
@@ -12045,6 +12660,7 @@
               "comment": "Abrir porta ao passar por ela"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12307,6 +12923,18 @@
                         "LightObstacleBehavior",
                         "no"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "PlaySound"
+                      },
+                      "parameters": [
+                        "",
+                        "assets\\Phases\\Sounds\\door_open.ogg",
+                        "",
+                        "",
+                        ""
+                      ]
                     }
                   ]
                 }
@@ -12394,12 +13022,12 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Lentidão",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12464,6 +13092,16 @@
                         "can_run",
                         "False"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Boneco",
+                        "is_running",
+                        "False"
+                      ]
                     }
                   ]
                 },
@@ -12514,6 +13152,16 @@
                       "parameters": [
                         "Boneco",
                         "can_run",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Boneco",
+                        "is_running",
                         "False"
                       ]
                     }
@@ -12577,12 +13225,12 @@
                         },
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "KeyPressed"
+                            "value": "ObjectVariableAsBoolean"
                           },
                           "parameters": [
-                            "",
-                            "LShift"
+                            "Boneco",
+                            "dash.is_dashing",
+                            "False"
                           ]
                         },
                         {
@@ -12591,7 +13239,7 @@
                           },
                           "parameters": [
                             "Boneco",
-                            "dash.is_dashing",
+                            "is_running",
                             "False"
                           ]
                         }
@@ -12628,261 +13276,357 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "# BUGADO"
-        },
-        {
-          "type": "BuiltinCommonInstructions::Comment",
-          "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
-            "textB": 0,
-            "textG": 0,
-            "textR": 0
-          },
-          "comment": "Boneco Dash "
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Dash",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "ObjectVariableAsBoolean"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "Boneco",
-                "dash.dash_in_delay",
-                "False"
+              "comment": "Boneco Dash "
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "dash.dash_in_delay",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "is_in_cutscene",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Boneco.TopDownMovement::Angle()",
+                    "Boneco.dash.dash_speed",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "invulnerability",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "dash.dash_in_delay",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "dash.is_dashing",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dashing_time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"redefine_dash\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"invulnerability_time\""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "GlobalVariableAsBoolean"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "is_in_cutscene",
-                "False"
+              "comment": "Timer para poder usar dash de novo"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"redefine_dash\"",
+                    ">=",
+                    "Boneco.dash.seconds_to_next_dash"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Effect",
+                    "\"dash_light\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash_effect_time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"redefine_dash\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "dash.dash_in_delay",
+                    "False"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "KeyPressed"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "",
-                "Space"
+              "comment": "Timer para remover ilvunerabilidade"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"invulnerability_time\"",
+                    ">=",
+                    "Boneco.dash.invulnerability_time"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"invulnerability_time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "invulnerability",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Timer para remover efeito de brilho"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash_effect_time\"",
+                    ">=",
+                    "0.1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dash_effect_time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Effect",
+                    "\"dash_light\"",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Timer para remover avanço do dash"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dashing_time\"",
+                    ">=",
+                    "0.15"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"dashing_time\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "dash.is_dashing",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "Boneco"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AddForceAL"
-              },
-              "parameters": [
-                "Boneco",
-                "Boneco.TopDownMovement::Angle()",
-                "Boneco.dash.dash_speed",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Boneco",
-                "invulnerability",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Boneco",
-                "dash.dash_in_delay",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Boneco",
-                "dash.is_dashing",
-                "True"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"dashing_time\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"redefine_dash\""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"invulnerability_time\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"redefine_dash\"",
-                ">=",
-                "Boneco.dash.seconds_to_next_dash"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"redefine_dash\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Flash::Flash::Flash"
-              },
-              "parameters": [
-                "Boneco",
-                "Flash",
-                "0.1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Boneco",
-                "dash.dash_in_delay",
-                "False"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"invulnerability_time\"",
-                ">=",
-                "Boneco.dash.invulnerability_time"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"invulnerability_time\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Boneco",
-                "invulnerability",
-                "False"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Boneco",
-                "dash.is_dashing",
-                "False"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"dashing_time\"",
-                ">=",
-                "0.15"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"dashing_time\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Arreter"
-              },
-              "parameters": [
-                "Boneco"
-              ]
-            }
-          ]
+          "parameters": []
         }
       ]
     },
@@ -15409,6 +16153,45 @@
               "parameters": [
                 "Boneco"
               ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "VerticalWallCutscene"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "HorizontalWallCutscene"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "DialogueWallCutscen"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                "Boneco"
+              ]
             },
             {
               "type": {
@@ -15417,6 +16200,15 @@
               "parameters": [
                 "have_cutscene",
                 "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "game_started",
+                "False"
               ]
             },
             {
@@ -15448,6 +16240,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -15461,30 +16254,6 @@
             }
           ],
           "actions": [
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "VerticalWallCutscene"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "HorizontalWallCutscene"
-              ]
-            },
-            {
-              "type": {
-                "value": "Cache"
-              },
-              "parameters": [
-                "DialogueWallCutscen"
-              ]
-            },
             {
               "type": {
                 "value": "TopDownMovementBehavior::MaxSpeed"
@@ -15747,6 +16516,15 @@
                     "value": "SetGlobalVariableAsBoolean"
                   },
                   "parameters": [
+                    "game_started",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
                     "is_in_cutscene",
                     "False"
                   ]
@@ -15830,6 +16608,15 @@
             },
             {
               "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "game_started",
+                "True"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
@@ -15891,6 +16678,488 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "InGameMenu",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Escape"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "GlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "game_started",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ToggleGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "game_paused"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Despausar"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "game_paused",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EnableLayerEffect"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"Pause_Effect\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Menu_UI\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Pausar"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "game_paused",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeTimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EnableLayerEffect"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    "\"Pause_Effect\"",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Menu_UI\""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Menu em jogo",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "ExitGameButton",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Quit"
+                  },
+                  "parameters": [
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteSlider::PanelSpriteSlider::IsBeingDragged"
+                  },
+                  "parameters": [
+                    "VolumeSlider",
+                    "="
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVolumeMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "0",
+                    "=",
+                    "VolumeSlider.Value()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "config.volume",
+                    "=",
+                    "VolumeSlider.Value()"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteToggleSwitch::SpriteToggleSwitch::HasJustBeenChecked"
+                  },
+                  "parameters": [
+                    "FullScreenTogle",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteToggleSwitch::SpriteToggleSwitch::HasJustBeenUnchecked"
+                  },
+                  "parameters": [
+                    "FullScreenTogle",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetFullScreen"
+                  },
+                  "parameters": [
+                    "",
+                    "yes",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "GlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "fullscreen",
+                    "False"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetFullScreen"
+                  },
+                  "parameters": [
+                    "",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsClicked"
+                  },
+                  "parameters": [
+                    "Langauges",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarGlobal"
+                  },
+                  "parameters": [
+                    "languages.selected",
+                    "+",
+                    "1"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "languages.selected",
+                        ">=",
+                        "languages.langauges_count"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarGlobal"
+                      },
+                      "parameters": [
+                        "languages.selected",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "DepartScene"
+                      },
+                      "parameters": [
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "languages.selected",
+                        ">=",
+                        "0"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Langauges",
+                    "=",
+                    "languages.selected"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+                  },
+                  "parameters": [
+                    "MenuBackButton",
+                    "language_texts[languages.selected].Options.BackButton",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "VolumeText",
+                    "Text",
+                    "=",
+                    "language_texts[languages.selected].Options.VolumeText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FullScreenText",
+                    "Text",
+                    "=",
+                    "language_texts[languages.selected].Options.FullscreenText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "LanguageText",
+                    "Text",
+                    "=",
+                    "language_texts[languages.selected].Options.LanguageText"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ]
     }
