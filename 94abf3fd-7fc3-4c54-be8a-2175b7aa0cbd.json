@@ -1222,6 +1222,51 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite5",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite6.png\"}",
+        "name": "NewSprite6",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite7",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite8",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1943,6 +1988,25 @@
           ]
         },
         {
+          "name": "upgrades_adquireds",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "MoreShotsUpgrade",
+              "persistentUuid": "8e69f245-d243-4cc0-a23b-de22ee109c1e",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "ShotsDelayUpgrade",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
           "folded": true,
           "name": "health",
           "type": "structure",
@@ -1990,6 +2054,7 @@
           ]
         },
         {
+          "folded": true,
           "name": "mov_speeds",
           "type": "structure",
           "children": [
@@ -4560,6 +4625,189 @@
           "width": 192
         }
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Potion",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite8",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 9
+                      },
+                      {
+                        "x": 58,
+                        "y": 9
+                      },
+                      {
+                        "x": 58,
+                        "y": 58
+                      },
+                      {
+                        "x": 6,
+                        "y": 58
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "MoreShotsUpgrade",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite4",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 4,
+                        "y": 11
+                      },
+                      {
+                        "x": 59,
+                        "y": 11
+                      },
+                      {
+                        "x": 59,
+                        "y": 53
+                      },
+                      {
+                        "x": 4,
+                        "y": 53
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShotsDelayUpgrade",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite6",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 6
+                      },
+                      {
+                        "x": 61,
+                        "y": 6
+                      },
+                      {
+                        "x": 61,
+                        "y": 57
+                      },
+                      {
+                        "x": 2,
+                        "y": 57
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4617,6 +4865,30 @@
       {
         "folderName": "Phases",
         "children": [
+          {
+            "folderName": "Items",
+            "children": [
+              {
+                "folderName": "Pickups",
+                "children": [
+                  {
+                    "objectName": "Potion"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "folderName": "Upgrades",
+            "children": [
+              {
+                "objectName": "ShotsDelayUpgrade"
+              },
+              {
+                "objectName": "MoreShotsUpgrade"
+              }
+            ]
+          },
           {
             "objectName": "shoot"
           },
@@ -5252,12 +5524,24 @@
           "name": "sfx_volume",
           "persistentUuid": "5dc55597-4817-4e70-85df-e5c2ab39479b",
           "type": "number",
-          "value": 20
+          "value": 60
         },
         {
           "name": "volume",
           "type": "number",
           "value": 0
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "Upgrades",
+      "type": "structure",
+      "children": [
+        {
+          "name": "AllUpgrades",
+          "type": "array",
+          "children": []
         }
       ]
     },
@@ -5274,6 +5558,7 @@
       "value": false
     },
     {
+      "folded": true,
       "name": "sfx_channels",
       "type": "structure",
       "children": [
@@ -7852,7 +8137,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.44819780454107666,
+        "zoomFactor": 0.4335774304702771,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -9684,6 +9969,126 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Potion",
+          "persistentUuid": "4b06af58-90ea-4249-8b78-027e84643fe3",
+          "width": 0,
+          "x": 768,
+          "y": 576,
+          "zOrder": 60,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MoreShotsUpgrade",
+          "persistentUuid": "0f755146-c51b-43bf-bc43-7ff6ec8896cf",
+          "width": 0,
+          "x": 576,
+          "y": 320,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "MoreShotsUpgrade",
+          "persistentUuid": "114c46a7-6ae5-4b9c-b6b7-bf7dea48a9df",
+          "width": 0,
+          "x": 672,
+          "y": 320,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ShotsDelayUpgrade",
+          "persistentUuid": "0dea5f54-298b-4512-a3bb-7b012cb6a997",
+          "width": 0,
+          "x": 608,
+          "y": 416,
+          "zOrder": 63,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ShotsDelayUpgrade",
+          "persistentUuid": "bc785de2-ed7b-4f5a-aa2d-0047f5429234",
+          "width": 0,
+          "x": 416,
+          "y": 448,
+          "zOrder": 64,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ShotsDelayUpgrade",
+          "persistentUuid": "a3241f58-c376-40d9-af12-8723ec25f704",
+          "width": 0,
+          "x": 480,
+          "y": 544,
+          "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ShotsDelayUpgrade",
+          "persistentUuid": "3b4882c9-d348-4d15-b3d1-227a549e8f52",
+          "width": 0,
+          "x": 448,
+          "y": 352,
+          "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "ShotsDelayUpgrade",
+          "persistentUuid": "aef2cb3a-820b-432a-a1e4-70dc628d8c24",
+          "width": 0,
+          "x": 352,
+          "y": 576,
+          "zOrder": 67,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -9747,17 +10152,6 @@
               ]
             }
           ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
         }
       ],
       "objectsFolderStructure": {
@@ -9765,9 +10159,6 @@
         "children": [
           {
             "objectName": "Gun"
-          },
-          {
-            "objectName": "NewSprite"
           }
         ]
       },
@@ -11420,6 +11811,13 @@
                 "includeConfig": 0
               },
               "target": "PlayerInteractions"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
+              "target": "Upgrades"
             },
             {
               "type": "BuiltinCommonInstructions::Link",
@@ -13530,6 +13928,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Dash",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -13894,6 +14293,40 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "Health::Health::IsJustDamaged"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Health",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::IsJustHealed"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "Health",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": []
         }
       ]
     },
@@ -14653,6 +15086,36 @@
                 "Text",
                 "=",
                 "Boneco.pickups.keys"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "Potion",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                "1",
+                ""
               ]
             }
           ]
@@ -18052,6 +18515,146 @@
                     "sfx_channels.player_death",
                     "config.sfx_volume",
                     "config.sfx_volume",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "associatedLayout": "Fase#1",
+      "lastChangeTimeStamp": 0,
+      "name": "Upgrades",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "MoreShotsUpgrade",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "upgrades_adquireds.MoreShotsUpgrade",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "MoreShotsUpgrade",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "ShotsDelayUpgrade",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "upgrades_adquireds.ShotsDelayUpgrade",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "ShotsDelayUpgrade",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetBulletQuantityOp"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "FireBullet",
+                    "+",
+                    "Boneco.upgrades_adquireds.MoreShotsUpgrade",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "FireBullet",
+                    "-",
+                    "Boneco.upgrades_adquireds.ShotsDelayUpgrade / 10",
                     ""
                   ]
                 }
