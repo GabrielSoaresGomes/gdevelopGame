@@ -20,7 +20,7 @@
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
-    "name": "RogueGame",
+    "name": "PlanetCrawler",
     "description": "",
     "author": "",
     "windowWidth": 1920,
@@ -6575,25 +6575,6 @@
                 "language_texts[languages.selected].Menu.CreditButton",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetFullScreen"
-              },
-              "parameters": [
-                "",
-                "yes",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetGlobalVariableAsBoolean"
-              },
-              "parameters": [
-                "fullscreen",
-                "True"
-              ]
             }
           ]
         }
@@ -8382,7 +8363,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.43357743047027814,
+        "zoomFactor": 0.4481978045410777,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -15304,7 +15285,6 @@
           "comment": "Jogador toma dano"
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -15383,6 +15363,28 @@
                 "Boneco",
                 "invulnerability",
                 "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Blood",
+                "Boneco.PointX(\"Center\")",
+                "Boneco.PointY(\"Center\")",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangePlan"
+              },
+              "parameters": [
+                "Blood",
+                "=",
+                "3"
               ]
             }
           ],
