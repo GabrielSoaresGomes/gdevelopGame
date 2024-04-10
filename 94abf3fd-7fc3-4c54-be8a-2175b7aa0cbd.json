@@ -1312,6 +1312,15 @@
         "name": "NewSprite13",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite14.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite14",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1324,7 +1333,14 @@
       "texture": "assets\\Phases\\TiledSprites\\TiledRockGround.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 64,
-      "variables": [],
+      "variables": [
+        {
+          "folded": true,
+          "name": "is_unlocked",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": []
     },
@@ -2052,7 +2068,6 @@
           ]
         },
         {
-          "folded": true,
           "name": "health",
           "type": "structure",
           "children": [
@@ -2076,6 +2091,12 @@
               "persistentUuid": "b2767dc7-17aa-4c7e-b1cf-f2105acd21ff",
               "type": "number",
               "value": 3
+            },
+            {
+              "folded": true,
+              "name": "life_healed",
+              "type": "number",
+              "value": 0
             },
             {
               "folded": true,
@@ -3102,7 +3123,13 @@
       "texture": "assets\\Phases\\TiledSprites\\TiledWoodGround.png",
       "type": "TiledSpriteObject::TiledSprite",
       "width": 32,
-      "variables": [],
+      "variables": [
+        {
+          "name": "is_unlocked",
+          "type": "boolean",
+          "value": false
+        }
+      ],
       "effects": [],
       "behaviors": []
     },
@@ -3805,67 +3832,6 @@
         "characterSize": 20,
         "color": "0;0;0"
       }
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "testwall",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "NewSprite",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 32,
-                        "y": 0
-                      },
-                      {
-                        "x": 32,
-                        "y": 32
-                      },
-                      {
-                        "x": 0,
-                        "y": 32
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     },
     {
       "assetStoreId": "",
@@ -4853,6 +4819,216 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "EyeMonster",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite10",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 6,
+                        "y": 6
+                      },
+                      {
+                        "x": 58,
+                        "y": 6
+                      },
+                      {
+                        "x": 58,
+                        "y": 41
+                      },
+                      {
+                        "x": 6,
+                        "y": 41
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": false,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "folded": true,
+          "name": "is_invincible",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 20,
+          "CurrentHealth": 0,
+          "MaxHealth": 20,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 2.0247e-320,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 2.0247e-320,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        },
+        {
+          "acceleration": 1000000,
+          "maxSpeed": 60,
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 0,
+          "cellWidth": 0,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1
+        }
+      ],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.7,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite12",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 56.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 57.5,
+                        "y": 59
+                      },
+                      {
+                        "x": 7,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite13",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 32,
+                    "y": 32
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 56.5,
+                        "y": 10.5
+                      },
+                      {
+                        "x": 57.5,
+                        "y": 59
+                      },
+                      {
+                        "x": 7,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4941,6 +5117,12 @@
             "folderName": "Enemies",
             "children": [
               {
+                "objectName": "NewSprite"
+              },
+              {
+                "objectName": "EyeMonster"
+              },
+              {
                 "objectName": "Slime"
               }
             ]
@@ -4948,9 +5130,6 @@
           {
             "folderName": "Room",
             "children": [
-              {
-                "objectName": "testwall"
-              },
               {
                 "folderName": "Rock",
                 "children": [
@@ -5063,9 +5242,6 @@
           "name": "WoodenWallCorner2"
         },
         {
-          "name": "testwall"
-        },
-        {
           "name": "TreasureRoomDoor"
         }
       ]
@@ -5099,6 +5275,31 @@
         },
         {
           "name": "Stairs"
+        }
+      ]
+    },
+    {
+      "name": "Monsters",
+      "objects": [
+        {
+          "name": "NewSprite"
+        },
+        {
+          "name": "EyeMonster"
+        },
+        {
+          "name": "Slime"
+        }
+      ]
+    },
+    {
+      "name": "Ground",
+      "objects": [
+        {
+          "name": "RockGround"
+        },
+        {
+          "name": "WoodGround"
         }
       ]
     },
@@ -8181,7 +8382,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.17,
         "snap": true,
-        "zoomFactor": 0.44819780454107666,
+        "zoomFactor": 0.43357743047027814,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -8277,7 +8478,7 @@
           "width": 0,
           "x": 1216,
           "y": 480,
-          "zOrder": 4,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8808,7 +9009,7 @@
           "width": 0,
           "x": 1785,
           "y": 480,
-          "zOrder": 4,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9127,7 +9328,7 @@
           "width": 0,
           "x": 3136,
           "y": -186,
-          "zOrder": 4,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9142,7 +9343,7 @@
           "width": 0,
           "x": 2375,
           "y": 480,
-          "zOrder": 4,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9281,7 +9482,7 @@
           "width": 0,
           "x": 3296,
           "y": -672,
-          "zOrder": 15,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9340,7 +9541,7 @@
           "layer": "",
           "name": "Carpet",
           "persistentUuid": "880e6a47-04bb-456f-a1d0-2131332ad075",
-          "width": 704,
+          "width": 832,
           "x": 3584,
           "y": 544,
           "zOrder": 2,
@@ -9358,7 +9559,7 @@
           "width": 0,
           "x": 3552,
           "y": 864,
-          "zOrder": 4,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9422,22 +9623,6 @@
           "width": 768,
           "x": 4416,
           "y": 192,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 1,
-          "height": 64,
-          "layer": "",
-          "name": "RockGround",
-          "persistentUuid": "d33d70ee-b212-4e85-b8ba-d9eedb00166a",
-          "width": 128,
-          "x": 4288,
-          "y": 544,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -9643,7 +9828,7 @@
           "width": 0,
           "x": 2080,
           "y": -442,
-          "zOrder": 23,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10019,27 +10204,12 @@
           "customSize": false,
           "height": 0,
           "layer": "",
-          "name": "Potion",
-          "persistentUuid": "4b06af58-90ea-4249-8b78-027e84643fe3",
-          "width": 0,
-          "x": 768,
-          "y": 576,
-          "zOrder": 60,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
           "name": "MoreShotsUpgrade",
           "persistentUuid": "0f755146-c51b-43bf-bc43-7ff6ec8896cf",
           "width": 0,
           "x": 576,
           "y": 320,
-          "zOrder": 61,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10054,7 +10224,7 @@
           "width": 0,
           "x": 672,
           "y": 320,
-          "zOrder": 62,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10069,7 +10239,7 @@
           "width": 0,
           "x": 608,
           "y": 416,
-          "zOrder": 63,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10084,7 +10254,7 @@
           "width": 0,
           "x": 416,
           "y": 448,
-          "zOrder": 64,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10099,7 +10269,7 @@
           "width": 0,
           "x": 480,
           "y": 544,
-          "zOrder": 65,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10114,7 +10284,7 @@
           "width": 0,
           "x": 448,
           "y": 352,
-          "zOrder": 66,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10129,7 +10299,213 @@
           "width": 0,
           "x": 352,
           "y": 576,
-          "zOrder": 67,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 32,
+          "layer": "",
+          "name": "Potion",
+          "persistentUuid": "f8c01e0f-e82f-4a3f-944c-603eac400421",
+          "width": 32,
+          "x": 768,
+          "y": 576,
+          "zOrder": 61,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 5,
+          "height": 288,
+          "layer": "",
+          "name": "NewSprite",
+          "persistentUuid": "5c9fd667-1d72-49c6-aa02-a8e22d80d61b",
+          "width": 288,
+          "x": 5040,
+          "y": 560,
+          "zOrder": 62,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Slime",
+          "persistentUuid": "b1772891-74dd-4b13-a503-e5b6d31f1f25",
+          "width": 0,
+          "x": 3776,
+          "y": 288,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Slime",
+          "persistentUuid": "75345692-0289-4647-b723-02c245662e5c",
+          "width": 0,
+          "x": 4192,
+          "y": 864,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "4ca106a0-0d5c-4d47-95f2-5c7db28b0da2",
+          "width": 64,
+          "x": 4480,
+          "y": 864,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "c878660d-6f7c-4f75-810a-0fa342f67614",
+          "width": 64,
+          "x": 5056,
+          "y": 864,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "65d5bb39-f03d-4d9d-8338-67c56aedd9b5",
+          "width": 64,
+          "x": 4480,
+          "y": 256,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "b63ec229-94e7-4580-bb6d-4d3fa2de1fe2",
+          "width": 64,
+          "x": 4544,
+          "y": 544,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "2e7d22b8-502f-4dfb-93eb-87bfa717982a",
+          "width": 64,
+          "x": 5056,
+          "y": 256,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "937de196-219d-4945-acfa-7e73393f06a9",
+          "width": 64,
+          "x": 4928,
+          "y": 544,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "fb78a553-3c9c-4598-be01-090721498188",
+          "width": 64,
+          "x": 4736,
+          "y": 256,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "b25f19ed-27dd-4254-8bfd-db2bd2310d52",
+          "width": 64,
+          "x": 4736,
+          "y": 864,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "Spike",
+          "persistentUuid": "0ce26038-43d7-42e0-84ca-680623e84b1f",
+          "width": 64,
+          "x": 4736,
+          "y": 544,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10196,347 +10572,6 @@
               ]
             }
           ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "AmmoUpgrade",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite4",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 4,
-                            "y": 11
-                          },
-                          {
-                            "x": 59,
-                            "y": 11
-                          },
-                          {
-                            "x": 59,
-                            "y": 53
-                          },
-                          {
-                            "x": 4,
-                            "y": 53
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "ShootTimeUpgrade",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite6",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 2,
-                            "y": 6
-                          },
-                          {
-                            "x": 61,
-                            "y": 6
-                          },
-                          {
-                            "x": 61,
-                            "y": 57
-                          },
-                          {
-                            "x": 2,
-                            "y": 57
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "Potion",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite8",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 9
-                          },
-                          {
-                            "x": 58,
-                            "y": 9
-                          },
-                          {
-                            "x": 58,
-                            "y": 58
-                          },
-                          {
-                            "x": 6,
-                            "y": 58
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "EyeMonster",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite10",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 6,
-                            "y": 6
-                          },
-                          {
-                            "x": 58,
-                            "y": 6
-                          },
-                          {
-                            "x": 58,
-                            "y": 41
-                          },
-                          {
-                            "x": 6,
-                            "y": 41
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "NewSprite",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 1,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite12",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 7
-                          },
-                          {
-                            "x": 64,
-                            "y": 7
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 1,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "NewSprite13",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 7
-                          },
-                          {
-                            "x": 64,
-                            "y": 7
-                          },
-                          {
-                            "x": 64,
-                            "y": 64
-                          },
-                          {
-                            "x": 1,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "objectsFolderStructure": {
@@ -10544,21 +10579,6 @@
         "children": [
           {
             "objectName": "Gun"
-          },
-          {
-            "objectName": "AmmoUpgrade"
-          },
-          {
-            "objectName": "ShootTimeUpgrade"
-          },
-          {
-            "objectName": "Potion"
-          },
-          {
-            "objectName": "EyeMonster"
-          },
-          {
-            "objectName": "NewSprite"
           }
         ]
       },
@@ -12210,6 +12230,13 @@
               "include": {
                 "includeConfig": 0
               },
+              "target": "Pickups"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Link",
+              "include": {
+                "includeConfig": 0
+              },
               "target": "PlayerInteractions"
             },
             {
@@ -12225,13 +12252,6 @@
                 "includeConfig": 0
               },
               "target": "Light"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Link",
-              "include": {
-                "includeConfig": 0
-              },
-              "target": "Pickups"
             },
             {
               "type": "BuiltinCommonInstructions::Link",
@@ -14695,38 +14715,174 @@
           "parameters": []
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Or"
+                "value": "BuiltinCommonInstructions::Once"
               },
-              "parameters": [],
-              "subInstructions": [
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "Health::Health::IsJustHealed"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Heart",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
                 {
                   "type": {
-                    "value": "Health::Health::IsJustDamaged"
+                    "value": "Health::Health::Health"
                   },
                   "parameters": [
                     "Boneco",
                     "Health",
-                    "="
+                    "<",
+                    "0",
+                    ""
                   ]
-                },
+                }
+              ],
+              "actions": [
                 {
                   "type": {
-                    "value": "Health::Health::IsJustHealed"
+                    "value": "Health::Health::SetHealth"
                   },
                   "parameters": [
                     "Boneco",
                     "Health",
+                    "0",
                     ""
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.Health::Health()",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Heart",
+                    "Boneco.health.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.Health::MaxHealth() - Boneco.Health::Health()",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EmptyHeart",
+                    "Boneco.health.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Heart",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.current_life_ui",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "invulnerability",
+                    "False"
+                  ]
+                }
+              ]
             }
-          ],
-          "actions": []
+          ]
         }
       ]
     },
@@ -14804,6 +14960,57 @@
                 "Boneco.shots.shots_damage",
                 "no",
                 "no",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "shoot",
+                "NewSprite",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "NewSprite",
+                "is_invincible",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "NewSprite",
+                "Health",
+                "Boneco.shots.shots_damage",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "shoot",
                 ""
               ]
             }
@@ -14974,8 +15181,60 @@
               "parameters": [
                 "Boneco",
                 "health.damage_taken",
-                "=",
+                "+",
                 "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Ghost Ataca Player"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "NewSprite",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "invulnerability",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "health.damage_taken",
+                "+",
+                "2"
               ]
             }
           ]
@@ -15026,7 +15285,7 @@
               "parameters": [
                 "Boneco",
                 "health.damage_taken",
-                "=",
+                "+",
                 "1"
               ]
             }
@@ -15045,6 +15304,7 @@
           "comment": "Jogador toma dano"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -15084,12 +15344,13 @@
             },
             {
               "type": {
-                "value": "SetObjectVariableAsBoolean"
+                "value": "ModVarObjet"
               },
               "parameters": [
                 "Boneco",
-                "invulnerability",
-                "True"
+                "health.life",
+                "-",
+                "Boneco.health.damage_taken"
               ]
             },
             {
@@ -15112,6 +15373,16 @@
                 "health.damage_taken",
                 "=",
                 "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Boneco",
+                "invulnerability",
+                "True"
               ]
             }
           ],
@@ -15142,6 +15413,17 @@
                     "Health",
                     "0",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.life",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -15263,6 +15545,157 @@
             "textG": 0,
             "textR": 0
           },
+          "comment": "Jogador Cura"
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "health.life_healed",
+                ">=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Heart",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::Heal"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                "Boneco.health.life_healed",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Boneco",
+                "health.life_healed",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.Health::Health()",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Heart",
+                    "Boneco.health.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "Boneco.Health::MaxHealth() - Boneco.Health::Health()",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "EmptyHeart",
+                    "Boneco.health.current_life_ui * 70",
+                    "0",
+                    "\"UI\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Heart",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.current_life_ui",
+                    "+",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "Boneco",
+                    "health.current_life_ui",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
           "comment": "Jogador fica com 0 de vida"
         },
         {
@@ -15306,46 +15739,6 @@
           "conditions": [
             {
               "type": {
-                "value": "Distance"
-              },
-              "parameters": [
-                "Slime",
-                "Boneco",
-                "500",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PathfindingBehavior::SetDestination"
-              },
-              "parameters": [
-                "Slime",
-                "Pathfinding",
-                "",
-                "Boneco.PointX(\"Center\")",
-                "Boneco.PointY(\"Center\")"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetObjectVariableAsBoolean"
-              },
-              "parameters": [
-                "Slime",
-                "is_chasing_player",
-                "True"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
                 "value": "Health::Health::IsDead"
               },
               "parameters": [
@@ -15366,6 +15759,626 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boneco",
+                "Ground",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Ground",
+                "is_unlocked",
+                "True"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Monsters",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Monsters",
+                "Ground",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Ground",
+                "is_unlocked",
+                "False"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "Monsters"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Monsters",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Monsters",
+                "Ground",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Ground",
+                "is_unlocked",
+                "True"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "Monsters",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ghost_invincible\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Slime "
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Slime",
+                    "Boneco",
+                    "500",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "Slime",
+                    "Pathfinding",
+                    "",
+                    "Boneco.PointX(\"Center\")",
+                    "Boneco.PointY(\"Center\")"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Slime",
+                    "is_chasing_player",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "Ghost",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Quando fastasma se torna invencivel, inicia um timer para remover esssa invencibilidade"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "is_invincible",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"remove_invincible\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Aqui remove a invencibilidade quando dá o tempo do timer"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"remove_invincible\"",
+                            ">=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "is_invincible",
+                            "False"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "Opacity",
+                            "=",
+                            "254"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"ghost_invincible\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "RemoveTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"remove_invincible\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Aqui é quando ativa o tempo para fantasma se tornar invencivel"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"ghost_invincible\"",
+                            ">=",
+                            "5"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "is_invincible",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PathfindingBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "Pathfinding",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "OpacityCapability::OpacityBehavior::SetValue"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "Opacity",
+                            "=",
+                            "50"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Movimento do fantasma atrás do player quando não estiver invencivel "
+                    },
+                    {
+                      "folded": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "ObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "is_invincible",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PathfindingBehavior::SetDestination"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "Pathfinding",
+                            "",
+                            "Boneco.PointX(\"Center\")",
+                            "Boneco.PointY(\"Center\")"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Velocidade quando estiver com mais da metade da vida"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::Health"
+                              },
+                              "parameters": [
+                                "NewSprite",
+                                "Health",
+                                ">",
+                                "NewSprite.Health::MaxHealth() / 2",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PathfindingBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "NewSprite",
+                                "Pathfinding",
+                                "=",
+                                "60"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Aumenta a velocidade do fantasma quando estiver com metade da vida"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::Health"
+                              },
+                              "parameters": [
+                                "NewSprite",
+                                "Health",
+                                "<=",
+                                "NewSprite.Health::MaxHealth() / 2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PathfindingBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "NewSprite",
+                                "Pathfinding",
+                                "=",
+                                "120"
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Comment",
+                          "color": {
+                            "b": 109,
+                            "g": 230,
+                            "r": 255,
+                            "textB": 0,
+                            "textG": 0,
+                            "textR": 0
+                          },
+                          "comment": "Aumenta a velocidade do fantasma quando estiver com 1 quarto da vida"
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "Health::Health::Health"
+                              },
+                              "parameters": [
+                                "NewSprite",
+                                "Health",
+                                "<=",
+                                "NewSprite.Health::MaxHealth() / 4",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PathfindingBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "NewSprite",
+                                "Pathfinding",
+                                "=",
+                                "180"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Apaga o fantasma quando morre"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::IsDead"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            "Health",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "NewSprite",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Iniciando o timer para o fantasma ficar invencivel"
         }
       ]
     },
@@ -15504,18 +16517,39 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::MaxHealth"
+              },
+              "parameters": [
+                "Boneco",
+                "Health",
+                ">",
+                "Boneco.health.life",
+                ""
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Health::Health::Heal"
+                "value": "Delete"
+              },
+              "parameters": [
+                "Potion",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
               },
               "parameters": [
                 "Boneco",
-                "Health",
-                "1",
-                ""
+                "health.life_healed",
+                "+",
+                "1"
               ]
             }
           ]
@@ -19035,8 +20069,8 @@
                   "parameters": [
                     "Boneco",
                     "FireBullet",
-                    "+",
-                    "Boneco.upgrades_adquireds.MoreShotsUpgrade",
+                    "=",
+                    "1 + Boneco.upgrades_adquireds.MoreShotsUpgrade",
                     ""
                   ]
                 }
@@ -19053,8 +20087,8 @@
                   "parameters": [
                     "Boneco",
                     "FireBullet",
-                    "-",
-                    "Boneco.upgrades_adquireds.ShotsDelayUpgrade / 10",
+                    "=",
+                    "1 - Boneco.upgrades_adquireds.ShotsDelayUpgrade / 10",
                     ""
                   ]
                 }
